@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbarLogo {
+  height: 100px;
+  width: 120px;
+  background-image: url("./assets/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbarButtons a {
+  margin: 0 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #034aac;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 85vh;
+  width: 100%;
+  background-color: #034aac;
+  padding: 200px 50px 0 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.heroImage {
+  flex: 1;
+  height: 450px;
+  width: 500px;
+  background-image: url("./assets/hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 50px;
+  animation: hero 1s ease-in-out infinite alternate;
+}
+@keyframes hero {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+  
+}
+
+.heroText {
+  flex: 1;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.heroText h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.heroText p {
+  font-size: 20px;
+  max-width: 500px;
+  margin-bottom: 100px;
+}
+/* About Us Section */
+.aboutUs {
+  background-color: azure;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+.aboutUsHeading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  color: #034aac;
+  margin-bottom: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 5px solid #f3e247;
+  padding-bottom: 5px;
+}
+.aboutUsContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 50px;
+}
+.aboutUsText {
+  height: 70%;
+  flex: 1;
+  font-size: 25px;
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+}
+
+.aboutUsImage {
+  height: 70%;
+  flex: 1;
+  background-image: url("./assets/about.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Services Section */
+.services {
+  background-color: #ffffff;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.serviceText {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  color: #034aac;
+  margin-bottom: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 5px solid #f3e247;
+  padding-bottom: 5px;
+}
+
+.serviceCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 20px; /* spacing between cards */
+  justify-items: center; /* center cards horizontally */
+  align-items: start; /* align cards vertically at top */
+}
+
+.card {
+  width: 100%;
+  max-width: 250px;
+  height: auto; /* let it adjust with text */
+  display: flex;
+  flex-direction: column; /* stack image + text vertically */
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain; /* keeps image proportion */
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #034aac;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 20px;
+  color: #555555;
+}
+
+.enquiry
+{
+  height: 120vh;
+  width: 100vw;
+  background-color: azure;
+  text-align: center;
+}
+.enquiryText
+{
+text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  color: #034aac;
+  margin-bottom: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 5px solid #f3e247;
+  padding-bottom: 5px;
+}
+.enquiryContainer
+{
+  display: flex;
+  height: 60vh;
+}
+.enquiryForm
+{
+  text-align: start;
+  padding: 10px 30px;
+  height: 60vh;
+  flex: 1;
+}
+.enquiryForm form input,select,textarea
+{
+  display: block;
+  padding: 10px 20px;
+  width: 80%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.enquiryForm form label
+{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top: 20px;
+font-size: 20px;
+color: #034aac;
+}
+.enquiryForm form button
+{
+padding: 10px 20px;
+border: none;
+background-color: #034aac;
+color: #ffffff;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 25px;
+}
+.enquiryAddress
+{
+  text-align: start;
+  padding: 10px 30px;
+  height: 60vh;
+  flex: 1;
+}
+.enquiryAddress p
+{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top: 20px;
+font-size: 20px;
+color: grey;
+}
+.enquiryAddress h1
+{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top: 20px;
+font-size: 20px;
+color: #034aac;
+}
+.enquiryAddress iframe
+{
+  margin-top: 20px;
+  width: 90%;
+  height: 50vh;
+}
+
+.feedback
+{
+  height: 50vh;
+  text-align: center;
+}
+.feedbackText
+{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  color: #034aac;
+  margin-bottom: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 5px solid #f3e247;
+  padding-bottom: 5px;
+}

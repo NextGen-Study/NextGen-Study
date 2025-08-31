@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nextgen Study</title>
-    <link rel="icon" type="image/svg+xml" href="assets/logoSVG.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/logoSVG.svg" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="navbar">
@@ -150,25 +157,25 @@
       </div>
       <div class="enquiryContainer">
         <div class="enquiryForm">
-          <form action="">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name" /><br>
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email" /><br>
-            <label for="phone">Phone</label><br>
-            <input type="tel" name="phone" id="phone" /><br>
-            <label for="course">Course</label><br>
+          <form name="enquiry" method="POST" data-netlify="true">
+            <label for="name">Name</label><br />
+            <input type="text" name="name" id="name" /><br />
+            <label for="email">Email</label><br />
+            <input type="email" name="email" id="email" /><br />
+            <label for="phone">Phone</label><br />
+            <input type="tel" name="phone" id="phone" /><br />
+            <label for="course">Course</label><br />
             <select name="course" id="">
-                <option value="">-- Select Course --</option>
+              <option value="">-- Select Course --</option>
               <option value="Java Programming">Java Programming</option>
               <option value="Web Development">Web Development</option>
               <option value="Data Structures">Data Structures</option>
               <option value="Accountancy">Accountancy</option>
               <option value="Economics">Economics</option>
               <option value="Mathematics">Mathematics</option>
-              <option value="Science">Science</option>
-            </select><br>
-            <label for="state">Select State:</label><br>
+              <option value="Science">Science</option></select
+            ><br />
+            <label for="state">Select State:</label><br />
             <select id="state" name="state" required>
               <option value="">-- Select State --</option>
               <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -212,29 +219,36 @@
               <option value="Jammu and Kashmir">Jammu and Kashmir</option>
               <option value="Ladakh">Ladakh</option>
               <option value="Lakshadweep">Lakshadweep</option>
-              <option value="Puducherry">Puducherry</option>
-            </select><br>
+              <option value="Puducherry">Puducherry</option></select
+            ><br />
 
-            <label for="message">Message</label><br>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea><br>
+            <label for="message">Message</label><br />
+            <textarea name="message" id="message" cols="30" rows="10"></textarea
+            ><br />
             <button type="submit">Submit</button>
+            <input type="hidden" name="form-name" value="contact">
           </form>
         </div>
         <div class="enquiryAddress">
           <h1>Address</h1>
-          <p>H.NO 655/12A, Gurudwara Road, Jawahar Colony, NIT Faridabad, Haryana. 121005 </p>
+          <p>
+            H.NO 655/12A, Gurudwara Road, Jawahar Colony, NIT Faridabad,
+            Haryana. 121005
+          </p>
           <h1>Phone</h1>
           <p>+91 9773869315, +91 9971510996</p>
           <h1>Email</h1>
           <p>nextgenstudy24@gmail.com</p>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.9107929470806!2d77.2866303!3d28.361546499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cddc496bd29a1%3A0x76a17ff141583!2sNextGen%20Study!5e0!3m2!1sen!2sin!4v1756306768326!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.9107929470806!2d77.2866303!3d28.361546499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cddc496bd29a1%3A0x76a17ff141583!2sNextGen%20Study!5e0!3m2!1sen!2sin!4v1756306768326!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
@@ -243,16 +257,40 @@
       <div class="feedbackText">
         <h1>Feedback</h1>
         <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-02cb3765-60dd-4ab0-9e27-7560992528bb" data-elfsight-app-lazy></div>
-
-
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div
+          class="elfsight-app-02cb3765-60dd-4ab0-9e27-7560992528bb"
+          data-elfsight-app-lazy
+        ></div>
       </div>
     </div>
 
+    <div class="footer">
+      <div class="footerContainer">
 
-  <div class="footer">
-    
-  </div>
+        <div class="footerLogo">
+        <img src="./assets/logoorg.png" alt="" height="200px" width="200px" />
+      </div>
+      
+      <div class="footerLinks">
+            <h2>Quick Links</h2>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+            <a href="">Enquiry</a>
+      </div>
+
+      <div class="footerIcons">
+        <p>Follow Us</p>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      </div>
+      
+      <div class="footerText">
+        <p><i class="fa-regular fa-copyright"></i> Nextgen Study 2023 | All Rights Reserved</p>
+      </div>
+    </div>
   </body>
 </html>

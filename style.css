@@ -93,7 +93,7 @@
 /* About Us Section */
 .aboutUs {
   background-color: azure;
-  height: 500px;
+  height: 90vh;
   width: 100%;
   text-align: center;
   padding-top: 20px;
@@ -108,6 +108,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-bottom: 5px solid #f3e247;
   padding-bottom: 5px;
+  padding-top: 20px;
 }
 .aboutUsContainer {
   height: 100%;
@@ -198,7 +199,7 @@
 
 .enquiry
 {
-  height: 120vh;
+  height: 115vh;
   width: 100vw;
   background-color: azure;
   text-align: center;

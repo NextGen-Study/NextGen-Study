@@ -140,6 +140,10 @@ html
 }
 .aboutUsImage {
   flex: 1;
+  height: 250px;
+  width: 100%; /* full width */
+  margin-top: 20px;
+  background-size: cover;
   background-image: url("./assets/about.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -364,13 +368,8 @@ body {
   padding-top: 100px; /* prevents navbar overlap */
 }
 
-@media (max-width: 1024px) {
-  .serviceCards {
-    grid-template-columns: repeat(2, 1fr); /* 2-column for tablet */
-  }
-}
-
 @media (max-width: 768px) {
+ 
   /* Navbar */
   .navbar {
     flex-direction: column;
@@ -378,7 +377,7 @@ body {
     padding: 15px;
   }
   .navbarLogo {
-    height: 50px;
+    height: 75px;
     width: 100px;
     margin-bottom: 10px;
   }
@@ -390,17 +389,24 @@ body {
     box-shadow: 1px 1px 1px black;
   }
 
+  /* Scroll margin fix for headings */
+  .hero,
+  .aboutUs,
+  .services,
+  .enquiry,
+  .feedback {
+    scroll-margin-top: 160px;
+  }
+
   /* Hero */
   .hero {
     flex-direction: column;
     text-align: center;
+    scroll-margin-top: 300px ;
     padding: 120px 20px 50px 20px;
+    background-image: url("./assets/ngsbanner2.gif");
+    background-size: contain;
     gap: 20px;
-  }
-  .heroImage {
-    height: 250px;
-    width: 100%;
-    margin-bottom: 20px;
   }
   .heroText h1 {
     font-size: 30px;
@@ -422,12 +428,15 @@ body {
   }
   .aboutUsImage {
     height: 250px;
-    margin-top: 20px;
+  width: 100%;              /* ✅ full width */
+  margin-top: 20px;
+  background-size: cover;   /* ✅ fills the box */
+  background-position: center;
   }
 
   /* Services */
   .serviceCards {
-    grid-template-columns: 1fr; /* 1 column on phone */
+    grid-template-columns: 1fr;
     gap: 25px;
     margin-top: 30px;
     padding: 20px;
@@ -470,11 +479,16 @@ body {
   }
   .footerLogo {
     left: 0;
+    top: 25px;
     margin-bottom: 15px;
     padding-top: 0;
   }
   .footerIcons {
     padding-top: 10px;
+    font-weight: bolder;
+  }
+  .footerIcons a {
+    font-size: 16px;
   }
   .footerLinks {
     padding-top: 20px;
@@ -482,5 +496,7 @@ body {
   .footerLinks a {
     display: inline-block;
     padding: 5px 10px;
+    font-size: 16px;
   }
 }
+

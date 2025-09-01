@@ -10,6 +10,7 @@ html
   scroll-margin-top: 120px; /* equal or slightly larger than navbar height */
 }
 * {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -76,11 +77,12 @@ html
   background-position: center;
   margin-bottom: 50px;
 } */
-.heroContainer
+/* .heroContainer
 {
+  max-height: 1200px;
   display: flex;
   align-items: center;
-}
+} */
 .heroText {
   flex: 1;
   color: #ffffff;
@@ -302,7 +304,7 @@ textarea {
 .footer {
   position: relative;
   height: auto;
-  width: 100vw;
+  width: 100%;
   background-color: #034aac;
   padding: 20px 10px;
 }
@@ -310,7 +312,7 @@ textarea {
   display: flex;
   justify-content: space-around;
   height: auto;
-  width: 100vw;
+  width: 100%;
 }
 .footerLogo {
   position: relative;
@@ -332,7 +334,7 @@ textarea {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .footerText {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   padding: 10px;
   font-size: 20px;

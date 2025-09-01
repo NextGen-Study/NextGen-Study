@@ -2,6 +2,7 @@ html
 {
   scroll-behavior: smooth;
 }
+.hero,
 .aboutUs,
 .services,
 .enquiry,
@@ -57,12 +58,15 @@ html
   gap: 50px;
   min-height: 85vh;
   width: 100%;
-  background-color: #034aac;
+ background-image: url("./assets/ngsbanner.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 100px 50px 0 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.heroImage {
+/* .heroImage {
   flex: 1;
   height: 450px;
   width: 500px;
@@ -71,17 +75,12 @@ html
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 50px;
-  animation: hero 1s ease-in-out infinite alternate;
+} */
+.heroContainer
+{
+  display: flex;
+  align-items: center;
 }
-@keyframes hero {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-10px);
-  }
-}
-
 .heroText {
   flex: 1;
   color: #ffffff;

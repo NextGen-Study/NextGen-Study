@@ -2,7 +2,7 @@ html
 {
   scroll-behavior: smooth;
 }
-.hero,
+
 .aboutUs,
 .services,
 .enquiry,
@@ -53,9 +53,11 @@ html
 
 /* Hero Section */
 .hero {
+  /* margin-top: 100px; */
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 120px;
   gap: 50px;
   min-height: 85vh;
   width: 100%;
@@ -66,23 +68,6 @@ html
   padding: 100px 50px 0 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-/* .heroImage {
-  flex: 1;
-  height: 450px;
-  width: 500px;
-  background-image: url("./assets/hero.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 50px;
-} */
-/* .heroContainer
-{
-  max-height: 1200px;
-  display: flex;
-  align-items: center;
-} */
 .heroText {
   flex: 1;
   color: #ffffff;
@@ -395,7 +380,7 @@ body {
   .services,
   .enquiry,
   .feedback {
-    scroll-margin-top: 160px;
+    scroll-margin-top: 120px;
   }
 
   /* Hero */
@@ -403,10 +388,12 @@ body {
     flex-direction: column;
     text-align: center;
     scroll-margin-top: 300px ;
-    padding: 120px 20px 50px 20px;
+    padding: 0px 50px;
     background-image: url("./assets/ngsbanner2.gif");
     background-size: contain;
     gap: 20px;
+    scroll-margin-top: 100px;
+    margin-top: 120px;
   }
   .heroText h1 {
     font-size: 30px;

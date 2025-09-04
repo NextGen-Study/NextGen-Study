@@ -127,7 +127,6 @@ html
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .aboutUsImage {
-  border-radius: 10%;
   flex: 1;
   height: 300px;
   margin-top: 20px;
@@ -387,6 +386,10 @@ body {
     display: inline-block;
     box-shadow: 1px 1px 1px black;
   }
+  .navbarButtons #whatsapp
+  {
+    color: #33b133;
+  }
   /* Hero */
   .hero {
     flex-direction: column;
@@ -415,6 +418,8 @@ body {
   .aboutUsContainer {
     flex-direction: column;
     padding: 0;
+    /* border: 2px solid yellow; */
+    height: 65vh;
   }
   .aboutUsText {
     font-size: 16px;
@@ -422,7 +427,8 @@ body {
     text-align: center;
   }
   .aboutUsImage {
-    height: 250px;
+    box-shadow: 2px 2px 2px black;
+    height: 200px;
   width: 70%;              /* ✅ full width */
   margin-top: 20px;
   background-size: cover;   /* ✅ fills the box */

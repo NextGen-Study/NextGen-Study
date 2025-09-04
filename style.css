@@ -51,6 +51,10 @@ html
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.navbarButtons #whatsapp
+  {
+    color: #33b133;
+  }
 
 /* Hero Section */
 .hero {
@@ -386,10 +390,7 @@ body {
     display: inline-block;
     box-shadow: 1px 1px 1px black;
   }
-  .navbarButtons #whatsapp
-  {
-    color: #33b133;
-  }
+  
   /* Hero */
   .hero {
     flex-direction: column;

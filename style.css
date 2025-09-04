@@ -1,14 +1,15 @@
 html
 {
   scroll-behavior: smooth;
+  scroll-padding-top: 120px;
 }
-
+/* .hero,
 .aboutUs,
 .services,
 .enquiry,
 .feedback {
-  scroll-margin-top: 120px; /* equal or slightly larger than navbar height */
-}
+  scroll-margin-top: 120px; 
+} */
 * {
   overflow-x: hidden;
   margin: 0;
@@ -53,11 +54,11 @@ html
 
 /* Hero Section */
 .hero {
+  position: relative;
   /* margin-top: 100px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  scroll-margin-top: 120px;
   gap: 50px;
   min-height: 85vh;
   width: 100%;
@@ -91,7 +92,6 @@ html
 
 /* About Us Section */
 .aboutUs {
-
   background-color: azure;
   min-height: 90vh;
   width: 100%;
@@ -111,8 +111,11 @@ html
   padding-top: 20px;
 }
 .aboutUsContainer {
+  height: 60vh;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   padding: 0px 50px;
 }
@@ -124,9 +127,9 @@ html
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .aboutUsImage {
+  border-radius: 10%;
   flex: 1;
-  height: 250px;
-  width: 100%; /* full width */
+  height: 300px;
   margin-top: 20px;
   background-size: cover;
   background-image: url("./assets/about.jpg");
@@ -154,13 +157,15 @@ html
   padding-bottom: 5px;
 }
 .serviceCards {
+  /* border: 10px solid red; */
   display: grid;
-  padding-top: 50px;
+  height: 80vh;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
   grid-template-rows: repeat(2, auto); /* 2 rows */
   gap: 20px;
-  justify-items: center;
-  align-items: start;
+  align-items: center;
+  /* justify-items: center; */
+  /* align-items: start; */
 }
 .card {
   width: 100%;
@@ -228,6 +233,7 @@ textarea {
   display: block;
   padding: 10px 20px;
   width: 80%;
+  font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .enquiryForm form label {
@@ -281,13 +287,18 @@ textarea {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
+  border-width: fit-content;
   display: inline-block;
   color: #034aac;
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  border-bottom: 5px solid #f3e247;
   padding-bottom: 5px;
   padding-top: 30px;
+}
+.feedbackText h1
+{
+  border-bottom: 5px solid #f3e247;
+  display: inline-block;
 }
 
 /* Footer */
@@ -355,10 +366,13 @@ body {
 
 @media (max-width: 768px) {
  
+  html {
+    scroll-padding-top: 200px; /* prevents navbar overlap */
+  }
   /* Navbar */
   .navbar {
     flex-direction: column;
-    height: auto;
+    height: 200px;
     padding: 15px;
   }
   .navbarLogo {
@@ -373,16 +387,6 @@ body {
     display: inline-block;
     box-shadow: 1px 1px 1px black;
   }
-
-  /* Scroll margin fix for headings */
-  .hero,
-  .aboutUs,
-  .services,
-  .enquiry,
-  .feedback {
-    scroll-margin-top: 120px;
-  }
-
   /* Hero */
   .hero {
     flex-direction: column;
@@ -404,25 +408,33 @@ body {
   }
 
   /* About Us */
+  .aboutUsHeading
+  {
+    font-size: 15px;
+  }
   .aboutUsContainer {
     flex-direction: column;
     padding: 0;
   }
   .aboutUsText {
-    font-size: 18px;
+    font-size: 13px;
     padding: 10px;
     text-align: center;
   }
   .aboutUsImage {
     height: 250px;
-  width: 100%;              /* ✅ full width */
+  width: 70%;              /* ✅ full width */
   margin-top: 20px;
   background-size: cover;   /* ✅ fills the box */
   background-position: center;
   }
 
   /* Services */
+  .serviceText {
+    font-size: 15px;
+  }
   .serviceCards {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
     margin-top: 30px;
@@ -432,13 +444,16 @@ body {
     max-width: 100%;
   }
   .card-title {
-    font-size: 20px;
+    font-size: 15px;
   }
   .card-desc {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   /* Enquiry */
+  .enquiryText {
+    font-size: 15px;
+  }
   .enquiryContainer {
     flex-direction: column;
     gap: 30px;
@@ -456,6 +471,10 @@ body {
     width: 100%;
     height: 250px;
     margin-bottom: 20px;
+  }
+
+  .feedbackText {
+    font-size: 15px;
   }
 
   /* Footer */

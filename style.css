@@ -417,7 +417,7 @@ body {
     padding: 0;
   }
   .aboutUsText {
-    font-size: 13px;
+    font-size: 16px;
     padding: 10px;
     text-align: center;
   }
@@ -439,15 +439,16 @@ body {
     gap: 25px;
     margin-top: 30px;
     padding: 20px;
+    height: auto;
   }
   .card {
     max-width: 100%;
   }
   .card-title {
-    font-size: 15px;
+    font-size: 16px;
   }
   .card-desc {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   /* Enquiry */

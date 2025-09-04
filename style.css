@@ -163,12 +163,12 @@ html
   /* border: 10px solid red; */
   display: grid;
   height: 80vh;
+  width: 100%;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
   grid-template-rows: repeat(2, auto); /* 2 rows */
   gap: 20px;
+  justify-items: center;
   align-items: center;
-  /* justify-items: center; */
-  /* align-items: start; */
 }
 .card {
   width: 100%;

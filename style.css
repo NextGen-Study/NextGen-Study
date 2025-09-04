@@ -370,25 +370,31 @@ body {
 @media (max-width: 768px) {
  
   html {
-    scroll-padding-top: 200px; /* prevents navbar overlap */
+    scroll-padding-top: 250px; /* prevents navbar overlap */
   }
   /* Navbar */
   .navbar {
     flex-direction: column;
-    height: 200px;
-    padding: 15px;
+    height: 250px;
   }
   .navbarLogo {
-    height: 75px;
+    height: 150px;
     width: 100px;
     margin-bottom: 10px;
+  }
+  .navbarButtons {
+    overflow-y: hidden;
+    width: 100%;
+    padding: 3px 3px;
+    margin-bottom: 10px;
+
   }
   .navbarButtons a {
     font-size: 16px;
     margin: 5px;
-    padding: 8px 10px;
+    padding: 8px 8px;
     display: inline-block;
-    box-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 2px black;
   }
   
   /* Hero */

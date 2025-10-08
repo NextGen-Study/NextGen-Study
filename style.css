@@ -511,11 +511,10 @@ body {
     text-align: center;
   }
   .aboutUsImage {
-    box-shadow: 2px 2px 2px black;
-    height: 200px;
+    height: 100px;
   width: 90%;             
   margin-top: 20px;
-  background-size: cover;   
+  background-size: contain;   
   background-position: center;
   }
 

@@ -109,7 +109,9 @@ html
   font-size: 30px;
   font-weight: bold;
   display: inline-block;
-  color: #034aac;
+  background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-bottom: 5px solid #f3e247;
@@ -138,11 +140,11 @@ html
   flex: 1;
   height: 350px;
   margin-top: 20px;
-  background-size: cover;
-  background-image: url("./assets/bestInstituteFaridabad.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+.aboutUsImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Services Section */
@@ -157,7 +159,9 @@ html
   font-size: 30px;
   font-weight: bold;
   display: inline-block;
-  color: #034aac;
+   background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-bottom: 5px solid #f3e247;
@@ -188,6 +192,17 @@ html
   padding: 15px;
   background-color: #ffffff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.card:hover .card-title,
+.card:hover .card-desc {
+  color: #ffffff;
+}
+.card:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to bottom, darkblue, black);
+  color: white;
 }
 .card-image {
   width: 80px;
@@ -270,7 +285,9 @@ html
 }
 .gallery h1
 {
-    color: #004aac;
+    background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
     border-bottom: 5px solid #f3e247;
     padding: 10px;
     margin-bottom: 30px;
@@ -290,7 +307,9 @@ html
   font-size: 30px;
   font-weight: bold;
   display: inline-block;
-  color: #034aac;
+   background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-bottom: 5px solid #f3e247;
@@ -368,7 +387,9 @@ textarea {
   font-weight: bold;
   border-width: fit-content;
   display: inline-block;
-  color: #034aac;
+   background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-bottom: 5px;
@@ -437,6 +458,18 @@ textarea {
   color: #ffffff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+  visibility: hidden;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
 
 /* ---------------- Responsive Fixes ---------------- */
 body {
@@ -479,30 +512,30 @@ body {
     flex-direction: column;
     text-align: center;
     scroll-margin-top: 300px ;
-    padding: 0px 50px;
+    padding: 0px 20px;
     background-image: url("./assets/ngsbanner2.gif");
-    background-size: contain;
+    background-size: cover;
     gap: 20px;
     scroll-margin-top: 100px;
-    margin-top: 120px;
   }
   .heroText h1 {
     font-size: 30px;
   }
   .heroText p {
+    height: fit-content;
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   /* About Us */
   .aboutUsHeading
   {
+    margin-top: 0;
     font-size: 15px;
   }
   .aboutUsContainer {
     flex-direction: column;
     padding: 0;
-    
     height: 80vh;
   }
   .aboutUsText {
@@ -511,11 +544,16 @@ body {
     text-align: center;
   }
   .aboutUsImage {
-    height: 100px;
+    /* border: 10px solid green; */
+    height: 20%;
   width: 90%;             
   margin-top: 20px;
   background-size: contain;   
   background-position: center;
+  }
+  .aboutUsImage img {
+    width: 100%;
+    height: 60%;
   }
 
   /* Services */
@@ -539,7 +577,17 @@ body {
   .card-desc {
     font-size: 16px;
   }
-  
+  .card:hover .card-title,
+.card:hover .card-desc {
+  color: #ffffff;
+}
+.card:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to bottom, darkblue, black);
+  color: white;
+}
 
   /* Enquiry */
   .enquiryText {
@@ -610,7 +658,9 @@ body {
 }
 .gallery h1
 {
-    color: #004aac;
+    background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
     border-bottom: 5px solid #f3e247;
     padding: 10px;
     margin-bottom: 30px;
@@ -745,7 +795,9 @@ body {
   font-size: 30px;
   font-weight: bold;
   display: inline-block;
-  color: #034aac;
+   background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-bottom: 5px solid #f3e247;
@@ -793,7 +845,9 @@ body {
   font-size: 30px;
   font-weight: bold;
   display: inline-block;
-  color: #034aac;
+   background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-bottom: 5px solid #f3e247;
@@ -840,6 +894,17 @@ body {
 .card-desc {
   font-size: 20px;
   color: #555555;
+}
+.card:hover .card-title,
+.card:hover .card-desc {
+  color: #ffffff;
+}
+.card:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to bottom, darkblue, black);
+  color: white;
 }
 
 /* Gallery */
@@ -908,7 +973,9 @@ body {
 }
 .gallery h1
 {
-    color: #004aac;
+     background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
     border-bottom: 5px solid #f3e247;
     padding: 10px;
     margin-bottom: 150px;
@@ -929,7 +996,9 @@ body {
   font-size: 30px;
   font-weight: bold;
   display: inline-block;
-  color: #034aac;
+   background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-bottom: 5px solid #f3e247;
@@ -1007,7 +1076,9 @@ textarea {
   font-weight: bold;
   border-width: fit-content;
   display: inline-block;
-  color: #034aac;
+   background-image: linear-gradient(to right, darkblue , black);
+  background-clip: text;
+  color: transparent;
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-bottom: 5px;

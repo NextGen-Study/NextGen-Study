@@ -516,7 +516,7 @@ body {
     background-image: url("./assets/ngsbanner2.gif");
     background-size: cover;
     gap: 20px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
   }
   .heroText h1 {
     font-size: 30px;

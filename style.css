@@ -558,7 +558,7 @@ body {
     left: 0px;
     font-size: 30px;
     background-image: linear-gradient(to bottom, darkblue , black);
-    height: 60%;
+    height: 100%;
     width: 100%;
   }
   .menuLinks a
@@ -593,7 +593,7 @@ body {
   
   /* Hero */
   .hero {
-    min-height: 60vh;
+    min-height: 80vh;
     flex-direction: column;
     text-align: center;
     scroll-margin-top: 300px ;

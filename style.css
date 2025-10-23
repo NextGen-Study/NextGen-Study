@@ -4,13 +4,7 @@ html
   scroll-padding-top: 120px;
   overflow-x: hidden;
 }
-/* .hero,
-.aboutUs,
-.services,
-.enquiry,
-.feedback {
-  scroll-margin-top: 120px; 
-} */
+
 * {
   margin: 0;
   padding: 0;
@@ -73,6 +67,17 @@ html
     display: block;
     margin: 5px 0;
   }
+
+  .menuLinks
+  {
+    display: none;
+  }
+
+  .mobIcons
+  {
+    display: none;
+   
+  }
 /* Hero Section */
 .hero {
   position: relative;
@@ -98,17 +103,24 @@ html
   justify-content: center;
   align-items: flex-start;
 }
-
 .heroText h1 {
-  font-size: 50px;
+  font-size: 80px;
   font-weight: bolder;
   margin-bottom: 30px;
 }
 
-.heroText p {
+.heroText h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.heroText h3 {
   font-size: 20px;
   max-width: 500px;
   margin-bottom: 100px;
+  font-weight: 100;
 }
 
 /* About Us Section */
@@ -343,8 +355,12 @@ html
 .enquiryForm form input,
 select,
 textarea {
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   display: block;
   padding: 10px 20px;
+  border-radius: 20px;
   width: 80%;
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -358,11 +374,20 @@ textarea {
 .enquiryForm form button {
   padding: 10px 20px;
   border: none;
-  background-color: #034aac;
-  color: #ffffff;
+  background-color: #ffffff;
+  border: 2px solid #034aac;
+  color:  #034aac;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
+  transition: all 0.3s ease-in-out;
 }
+
+.enquiryForm button:hover {
+background-color: #034aac;
+color: #ffffff;
+}
+
+
 .enquiryAddress {
   text-align: start;
   padding: 10px 30px;
@@ -492,6 +517,84 @@ body {
   
 }
 
+@media (min-width: 769px) and (max-width: 1400px) {
+
+  html {
+    scroll-padding-top: 100px; 
+  }
+
+  .hero {
+  position: relative;
+  /* margin-top: 100px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  min-height: 85vh;
+  width: 100%;
+ background-image: url("./assets/ngsbanner2.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 50px 0 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.heroText {
+  flex: 1;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.heroText h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.heroText h3 {
+  font-size: 20px;
+  max-width: 500px;
+  margin-bottom: 100px;
+}
+
+/* About Us Section */
+.aboutUs {
+  background-color: azure;
+  min-height: 90vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.aboutUsText {
+  padding-top: 30px;
+  flex: 1;
+  font-size: 25px;
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.aboutUsImage {
+  display: none;
+  border-radius: 10px;
+  flex: 1;
+  position: relative;
+  left: 30px;
+
+  height: 250px;
+  margin-top: 20px;
+}
+.aboutUsImage img {
+  width: 80%;
+  height: 100%;
+  object-fit: fil;
+}
+
+  
+}
+
 @media (max-width: 768px) {
  
   html {
@@ -501,6 +604,7 @@ body {
   .navbar {
     flex-direction: column;
     height: 100px;
+    box-shadow: 3px 3px 5px black;
   }
   .navbarLogo {
     height: 100px;
@@ -552,23 +656,35 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-items: center;
     transform: translateX(100%);
-    justify-content: center ;
     flex-direction: column;
     top: 100px;
     left: 0px;
-    font-size: 30px;
     background-image: linear-gradient(to bottom, darkblue , black);
     height: 100%;
     width: 100%;
   }
+
   .menuLinks a
   {
+    margin-top: 15px;
     padding: 10px;
-    display: block;
+    display: inline-block;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
     text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px black;
+  }
+
+  .menuLinks h2
+  {
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    top: 200px;
+    text-align: center;
   }
   .menuLinks a:hover
   {
@@ -582,34 +698,85 @@ body {
 
   }
   .menuButton.active span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(6.5px, 6.5px);
 }
 .menuButton.active span:nth-child(2) {
   opacity: 0;
 }
 .menuButton.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px,-6px);
+  transform: rotate(-45deg) translate(6.5px,-6.5px);
 }
   
-  /* Hero */
-  .hero {
-    min-height: 80vh;
+.mobIcons
+  {
+
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    scroll-margin-top: 300px ;
-    padding: 0px 20px;
-    background-image: url("./assets/ngsbanner2.gif");
-    background-size: cover;
-    gap: 20px;
-    scroll-margin-top: 150px;
+    z-index: 999;
+    position: fixed;
+    top: 75%;
+    right: -5%;
+    height: 100px;
+    width: 100px;
+    animation: float 0.5s ease-in-out infinite;
   }
-  .heroText h1 {
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .mobIcons a
+  {
+    box-shadow: 2px 2px 5px black;
+    text-decoration: none;
+    border-radius: 50%;
+    /* background-color: #ffffff; */
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
   }
-  .heroText p {
-    height: fit-content;
-    font-size: 16px;
-    margin-bottom: 0px;
+
+  .mobIcons #whatsapp
+  {
+    color: #ffffff;
+    background-color: #33b133;
+  }
+  .mobIcons #telephone
+  {
+    color: #ffffff;
+    background-color: blueviolet;
+  }
+  /* Hero */
+  .hero {
+    scroll-margin-top: 150px;
+    background-image: url("./assets/ngsbanner2.gif");
+    min-height: 80vh;
+
+
+  }
+  .heroText h1 {
+   
+    font-size: 30px;
+  }
+  .heroText h2 {
+    font-size: 20px;
+    
+  }
+  .heroText h3 {
+    font-size: 15px;
+    
   }
 
   /* About Us */
@@ -764,7 +931,7 @@ body {
     height: 50vh;
     width: 100%;
 }
-
+}
 
 
 
@@ -854,19 +1021,25 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
-
 .heroText h1 {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bolder;
   margin-bottom: 30px;
 }
 
-.heroText p {
-  font-size: 25px;
-  max-width: 500px;
-  margin-bottom: 100px;
+.heroText h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
+.heroText h3 {
+  font-size: 20px;
+  max-width: 500px;
+  margin-bottom: 100px;
+  font-weight: 100;
+}
 /* About Us Section */
 .aboutUs {
   background-color: azure;

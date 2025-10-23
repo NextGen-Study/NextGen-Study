@@ -58,6 +58,21 @@ html
     color: #33b133;
   }
 
+  .menuButton
+  {
+    display: none;
+    height: 20px;
+    width: 20px;
+  }
+  .menuButton span
+  {
+    height: 4px; 
+    width: 25px;
+    background-color: #034aac;
+    
+    display: block;
+    margin: 5px 0;
+  }
 /* Hero Section */
 .hero {
   position: relative;
@@ -480,19 +495,23 @@ body {
 @media (max-width: 768px) {
  
   html {
-    scroll-padding-top: 250px; 
+    scroll-padding-top: 100px; 
   }
   /* Navbar */
   .navbar {
     flex-direction: column;
-    height: 250px;
+    height: 100px;
   }
   .navbarLogo {
-    height: 150px;
+    height: 100px;
     width: 100px;
     margin-bottom: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
   .navbarButtons {
+    display: none;
     overflow-y: hidden;
     width: 100%;
     padding: 3px 3px;
@@ -506,9 +525,75 @@ body {
     display: inline-block;
     box-shadow: 1px 1px 2px black;
   }
+  .menuButton
+  {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 45px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .menuButton span
+  {
+    display: block;
+    color: #33b133;
+     transform-origin: center;
+     transition: all 0.3s ease-in-out;
+  }
+    
+  .menuLinks
+  {
+    display: flex;
+    color: #f3e247;
+    position: fixed;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    transform: translateX(100%);
+    justify-content: center ;
+    flex-direction: column;
+    top: 100px;
+    left: 0px;
+    font-size: 30px;
+    background-image: linear-gradient(to bottom, darkblue , black);
+    height: 60%;
+    width: 100%;
+  }
+  .menuLinks a
+  {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .menuLinks a:hover
+  {
+    color: #f3e247;
+  }
+  .menuLinks.active
+  {
+     display: flex;
+     transform: translateX(0); 
+     opacity: 1;
+
+  }
+  .menuButton.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.menuButton.active span:nth-child(2) {
+  opacity: 0;
+}
+.menuButton.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px,-6px);
+}
   
   /* Hero */
   .hero {
+    min-height: 60vh;
     flex-direction: column;
     text-align: center;
     scroll-margin-top: 300px ;
@@ -679,7 +764,7 @@ body {
     height: 50vh;
     width: 100%;
 }
-}
+
 
 
 

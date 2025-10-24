@@ -147,7 +147,7 @@ html
   {
     font-size: 25px;
     padding: 10px 10px;
-    background-color: #9629f5;
+    background-image: linear-gradient(to left , crimson , magenta);
     border-radius: 30px;
     text-decoration: none;
     color: #ffffff;
@@ -602,7 +602,7 @@ body {
   {
     font-size: 20px;
     padding: 5px 10px;
-    background-color: #9629f5;
+   background-image: linear-gradient(to left , crimson , magenta);
     border-radius: 30px;
     text-decoration: none;
     color: #ffffff;
@@ -863,7 +863,7 @@ body {
   {
     font-size: 20px;
     padding: 10px 10px;
-    background-color: #9629f5;
+    background-image: linear-gradient(to left , crimson , magenta);
     border-radius: 30px;
     text-decoration: none;
     color: #ffffff;

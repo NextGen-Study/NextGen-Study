@@ -37,3 +37,53 @@ links.forEach(link => {
   }
 
   toggleMenu();
+
+  const subjects = [
+      "Web Development",
+      "Python Programming",
+      "C++",
+      "Data Structures",
+      "Java",
+      "Accountancy",
+      "Economics",
+      "Mathematics",
+      "Physics",
+      "Chemistry",
+      "English",
+      "Digital Marketing",
+      "Graphic Design"
+    ];
+
+     const typedText = document.getElementById("typedText");
+    let subjectIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 120;
+
+    function typeAnimation() {
+      const currentSubject = subjects[subjectIndex];
+
+      if (!isDeleting) {
+        typedText.textContent = currentSubject.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentSubject.length) {
+          isDeleting = true;
+          setTimeout(typeAnimation, 1000);
+          return;
+        }
+      } else {
+        typedText.textContent = currentSubject.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+          isDeleting = false;
+          subjectIndex = (subjectIndex + 1) % subjects.length;
+        }
+      }
+
+      const delay = isDeleting ? 60 : typingSpeed;
+      setTimeout(typeAnimation, delay);
+    }
+
+    document.addEventListener("DOMContentLoaded", typeAnimation);

@@ -82,9 +82,6 @@ html
 .hero {
   position: relative;
   /* margin-top: 100px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 50px;
   min-height: 85vh;
   width: 100%;
@@ -100,8 +97,6 @@ html
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 .heroText h1 {
   font-size: 80px;
@@ -113,14 +108,39 @@ html
   font-size: 40px;
   font-weight: bolder;
   margin-bottom: 30px;
-  text-align: center;
 }
 
-.heroText h3 {
+/* .heroText #subTextContainer
+{
+  background-color: #33b133;
+  width: 300px;
+} */
+.heroText #subText {
   font-size: 20px;
   max-width: 500px;
   margin-bottom: 100px;
   font-weight: 100;
+}
+.heroButtons {
+    position: relative;
+    top: -50px;
+   
+  }
+  .heroButtons a
+  {
+    font-size: 25px;
+    padding: 10px 10px;
+    background-color: #9629f5;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+    margin: 0px 10px;
+  }
+.heroText #typedText
+{
+  color: #f3e247;
+  border-right: 3px solid #f3e247;
 }
 
 /* About Us Section */
@@ -524,11 +544,6 @@ body {
   }
 
   .hero {
-  position: relative;
-  /* margin-top: 100px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 50px;
   min-height: 85vh;
   width: 100%;
@@ -539,26 +554,47 @@ body {
   padding: 100px 50px 0 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.heroText {
-  flex: 1;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
 .heroText h1 {
-  font-size: 50px;
-  font-weight: bolder;
-  margin-bottom: 30px;
-}
+    width: 100%;
+    font-size: 60px;
+  }
+  .heroText #subHeading {
+    font-size: 30px;
+    width:100%;
+    
+  }
+  .heroText #subText {
+    font-size: 20px;
+    width:100%;
+    font-weight: 100;
+    
+    
+  }
+ 
+  #subTextContainer
+  {
+    height: fit-content;
+    width: 400px;
+  }
 
-.heroText h3 {
-  font-size: 20px;
-  max-width: 500px;
-  margin-bottom: 100px;
-}
+  .heroButtons {
+    top: -70px;
+    position: relative;
+    }
+  .heroButtons a
+  {
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #9629f5;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+    margin: 0px 10px;
+  }
+  
+  
+  
 
 /* About Us Section */
 .aboutUs {
@@ -767,18 +803,59 @@ body {
 
   }
   .heroText h1 {
-   
-    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
   }
-  .heroText h2 {
+  .heroText #subHeading {
     font-size: 20px;
+    width:100%;
+    text-align: center;
     
   }
-  .heroText h3 {
+  .heroText #subText {
     font-size: 15px;
+    width:100%;
+    text-align: justify;
+    font-weight: 200;
     
+  }
+ #subTextContainer
+  {
+    height: 100px;
+    position: relative;
+    top: 50px;
+    /* background-color: #33b133; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
   }
 
+  .heroButtons {
+    position: relative;
+    top: 40px;
+    /* margin-top: 30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroButtons a
+  {
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #9629f5;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+    margin: 0px 10px;
+  }
+  
+  
+  
   /* About Us */
   .aboutUsHeading
   {
@@ -996,13 +1073,9 @@ body {
     color: #33b133;
   }
 
-/* Hero Section */
 .hero {
   position: relative;
   /* margin-top: 100px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 50px;
   min-height: 85vh;
   width: 100%;
@@ -1018,27 +1091,30 @@ body {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 .heroText h1 {
-  font-size: 80px;
+  font-size: 100px;
   font-weight: bolder;
   margin-bottom: 30px;
 }
 
 .heroText h2 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bolder;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .heroText h3 {
-  font-size: 20px;
+  font-size: 50px;
   max-width: 500px;
   margin-bottom: 100px;
   font-weight: 100;
+}
+
+.heroText #typedText
+{
+  color: #f3e247;
+  border-right: 3px solid #f3e247;
 }
 /* About Us Section */
 .aboutUs {

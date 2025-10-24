@@ -805,7 +805,7 @@ body {
   .heroText h1 {
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
   }
   .heroText #subHeading {
     font-size: 20px;
@@ -845,7 +845,7 @@ body {
   .heroButtons a
   {
     font-size: 20px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     background-color: #9629f5;
     border-radius: 30px;
     text-decoration: none;

@@ -38,20 +38,37 @@ html
 }
 
 .navbarButtons a  {
+  position: relative;
+  text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
-  padding:  15px;
+  padding:  5px;
   overflow-y: hidden;
   color: #034aac;
   font-size: 20px;
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
 }
+ .navbarButtons a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 4px;
+      background-image: linear-gradient(to left,red, orange);
+      transition: width 0.3s ease;
+    }
+
+    .navbarButtons a:hover::after {
+      width: 100%;
+    }
 .navbarButtons #whatsapp
   {
     color: #33b133;
   }
-
   .menuButton
   {
     display: none;
@@ -1061,7 +1078,7 @@ body {
 .navbarButtons a  {
   margin: 0 15px;
   font-weight: bold;
-  padding:  15px;
+  padding:  10px;
   overflow-y: hidden;
   color: #034aac;
   font-size: 20px;

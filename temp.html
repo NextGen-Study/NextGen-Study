@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Effect Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000; /* Black background */
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .glass-card {
+      width: 320px;
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+
+      /* Glass effect core */
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .glass-card:hover {
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+      transform: scale(1.03);
+    }
+
+    .glass-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .glass-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    /* Optional background decoration */
+    .background-shapes::before,
+    .background-shapes::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      z-index: -1;
+    }
+
+    .background-shapes::before {
+      width: 250px;
+      height: 250px;
+      top: 10%;
+      left: 20%;
+      background: rgba(255, 0, 150, 0.4);
+    }
+
+    .background-shapes::after {
+      width: 300px;
+      height: 300px;
+      bottom: 15%;
+      right: 20%;
+      background: rgba(0, 150, 255, 0.4);
+    }
+  </style>
+</head>
+<body class="background-shapes">
+  <div class="glass-card">
+    <h2>Glass Effect Card</h2>
+    <p>
+      This is a frosted glass card on a dark background.  
+      The blurred background and transparency create a realistic glass effect.
+    </p>
+  </div>
+</body>
+</html>

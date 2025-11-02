@@ -1,5 +1,5 @@
   function fadeAnimation() {
-  const sections = document.querySelectorAll('.hero, .aboutUs, .services, .gallery, .enquiry, .feedback, .footer');
+  const sections = document.querySelectorAll('.heroText, .aboutUsText, .aboutUsHeading, .serviceText, .serviceCards, .carousel basic, .enquiryText, .enquiryContainer, .feedbackText');
 
   
   sections.forEach(section => section.classList.add('fade-section'));

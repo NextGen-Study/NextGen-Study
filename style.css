@@ -12,6 +12,14 @@ html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+#vector
+{
+  position: absolute;
+  left: -80px;
+  top: 500px;
+  height: 300px;
+  width: 110vw;
+}
 /* Navbar */
 .navbar {
   display: flex;
@@ -163,6 +171,7 @@ html {
 }
 
 .aboutUsHeading h1 {
+  margin-top: 10%;
   padding: 20px;
 }
 .aboutUsContainer {
@@ -615,6 +624,38 @@ body {
     box-shadow: 1px 1px 3px rgb(0, 0, 0);
     margin: 0px 10px;
   }
+  #vector
+  {
+    top: 500px;
+    height: 250px;
+    width: 110%;
+  }
+
+ 
+.aboutUsHeading {
+  font-size: 60px;
+}
+
+.aboutUsContainer {
+  height: 85vh;
+  margin-left: 7%;
+}
+.aboutUsText {
+  font-size: 15px;
+}
+
+.aboutUsCredentials {
+  width: 25rem;
+}
+.cCard #cCardh {
+  color: #f3e247;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.cCard #cCardp {
+  color: white;
+  font-weight: bolder;
+}
 }
 
 @media (max-width: 768px) {
@@ -819,6 +860,13 @@ body {
     margin: 0px 10px;
   }
 
+  #vector
+  {
+    top: 520px;
+    height: 150px;
+    width: 190%;
+    overflow-x: hidden;
+  }
   /* About Us */
   .aboutUs {
     display: flex;
@@ -831,7 +879,7 @@ body {
     background-image: url(assets/aboutUsMobile.png);
   }
   .aboutUsHeading {
-    margin-top: 10px;
+    margin-top: 25px;
     font-size: 15px;
     font-weight: bold;
     color: white;
@@ -1017,6 +1065,10 @@ body {
     color: #f3e247;
     border-right: 3px solid #f3e247;
   }
+  #vector
+{
+  top: 700px;
+}
   .aboutUsHeading h1 {
     font-size: 200px;
   }

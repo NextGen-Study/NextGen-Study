@@ -11,14 +11,18 @@ html {
   scroll-behavior: smooth;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
+.vectorShape
+{
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  left: -20px;
+  top: 85%;
+}
 #vector
 {
-  position: absolute;
-  left: -80px;
-  top: 500px;
-  height: 300px;
-  width: 110vw;
+  width: 100%;
+  height: 250px;
 }
 /* Navbar */
 .navbar {
@@ -624,12 +628,19 @@ body {
     box-shadow: 1px 1px 3px rgb(0, 0, 0);
     margin: 0px 10px;
   }
-  #vector
-  {
-    top: 500px;
-    height: 250px;
-    width: 110%;
-  }
+  .vectorShape
+{
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  left: -20px;
+  top: 85%;
+}
+#vector
+{
+  width: 100%;
+  height: 200px;
+}
 
  
 .aboutUsHeading {
@@ -637,15 +648,17 @@ body {
 }
 
 .aboutUsContainer {
-  height: 85vh;
-  margin-left: 7%;
+  margin-left: 15%;
 }
 .aboutUsText {
-  font-size: 15px;
+  font-size: 18px;
+  margin-top: 30%;
 }
 
 .aboutUsCredentials {
-  width: 25rem;
+  width: 30rem;
+  left: 20%;
+  top: 20%;
 }
 .cCard #cCardh {
   color: #f3e247;
@@ -860,14 +873,19 @@ body {
     margin: 0px 10px;
   }
 
-  #vector
-  {
-    top: 520px;
-    height: 150px;
-    width: 116%;
-    width: 122%;
-    overflow-x: hidden;
-  }
+ .vectorShape
+{
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  left: -20px;
+  top: 85%;
+}
+#vector
+{
+  width: 105%;
+  height: 120px;
+}
   /* About Us */
   .aboutUs {
     display: flex;

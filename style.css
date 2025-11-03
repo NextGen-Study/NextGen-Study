@@ -879,12 +879,13 @@ body {
   height: 100px;
   position: absolute;
   left: -20px;
-  top: 85%;
+  top: 83%;
 }
 #vector
 {
   width: 105%;
-  height: 120px;
+  min-height: 120px;
+  max-height: 160px;
 }
   /* About Us */
   .aboutUs {

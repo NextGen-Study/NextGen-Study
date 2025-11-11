@@ -3,7 +3,6 @@ html {
   scroll-padding-top: 100px;
   overflow-x: hidden;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -11,20 +10,17 @@ html {
   scroll-behavior: smooth;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.vectorShape
-{
+.vectorShape {
   width: 100vw;
   height: 100px;
   position: absolute;
   left: -20px;
   top: 85%;
 }
-#vector
-{
+#vector {
   width: 100%;
   height: 250px;
-}
-/* Navbar */
+} /* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -39,7 +35,6 @@ html {
   z-index: 9999;
   overflow: hidden;
 }
-
 .navbarLogo {
   height: 100px;
   width: 120px;
@@ -48,7 +43,6 @@ html {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .navbarButtons a {
   position: relative;
   text-decoration: none;
@@ -72,7 +66,6 @@ html {
   background-image: linear-gradient(to left, red, orange);
   transition: width 0.3s ease;
 }
-
 .navbarButtons a:hover::after {
   width: 100%;
 }
@@ -88,19 +81,15 @@ html {
   height: 4px;
   width: 25px;
   background-image: linear-gradient(to right, #f95bf6, #532cf9);
-
   display: block;
   margin: 5px 0;
 }
-
 .menuLinks {
   display: none;
 }
-
 .mobIcons {
   display: none;
-}
-/* Hero Section */
+} /* Hero Section */
 .hero {
   position: relative;
   gap: 50px;
@@ -126,13 +115,11 @@ html {
   font-weight: bolder;
   margin-bottom: 30px;
 }
-
 .heroText h2 {
   font-size: 40px;
   font-weight: bolder;
   margin-bottom: 30px;
 }
-
 .heroText #subText {
   font-size: 20px;
   max-width: 500px;
@@ -156,9 +143,7 @@ html {
 .heroText #typedText {
   color: #f3e247;
   border-right: 3px solid #f3e247;
-}
-
-/* About Us Section */
+} /* About Us Section */
 .aboutUs {
   background-image: url(./assets/aboutUs.png);
   background-size: cover;
@@ -173,7 +158,6 @@ html {
   font-weight: bold;
   color: white;
 }
-
 .aboutUsHeading h1 {
   margin-top: 10%;
   padding: 20px;
@@ -192,7 +176,6 @@ html {
   font-size: 20px;
   text-align: justify;
 }
-
 .aboutUsCredentials {
   display: flex;
   justify-content: space-between;
@@ -211,8 +194,7 @@ html {
   color: white;
   font-size: 20px;
   font-weight: bolder;
-}
-/* Services Section */
+} /* Services Section */
 .services {
   background-color: #000000;
   text-align: center;
@@ -226,7 +208,6 @@ html {
   filter: blur(100px);
   z-index: -1;
 }
-
 .services::before {
   width: 250px;
   height: 250px;
@@ -234,7 +215,6 @@ html {
   left: 20%;
   background: rgba(255, 0, 150, 0.4);
 }
-
 .services::after {
   width: 300px;
   height: 300px;
@@ -273,14 +253,12 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  /* Glass effect core */
+  text-align: center; /* Glass effect core */
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-
   color: #fff;
   transition: all 0.3s ease;
   border-radius: 10px;
@@ -309,15 +287,12 @@ html {
   color: transparent;
   font-size: 25px;
   font-weight: bold;
-
   margin-bottom: 10px;
 }
 .card-desc {
   font-size: 20px;
   color: #ffffff;
-}
-
-/* Gallery */
+} /* Gallery */
 .carousel {
   margin: 0 auto;
   padding: 20px 0;
@@ -326,18 +301,15 @@ html {
   overflow: hidden;
   display: flex;
 }
-
 .carousel > * {
   flex: 0 0 100%;
 }
-
 .group {
   display: flex;
   gap: 20px;
   padding-right: 20px;
   animation: scrolling 120s linear infinite;
 }
-
 @keyframes scrolling {
   0% {
     transform: translateX(0);
@@ -346,7 +318,6 @@ html {
     transform: translateX(-100%);
   }
 }
-
 .gcard {
   flex: 0 0 auto;
   width: 500px;
@@ -360,7 +331,6 @@ html {
   font-size: xx-large;
   overflow: hidden;
 }
-
 .gcard img {
   width: 100%;
   height: 100%;
@@ -386,9 +356,7 @@ html {
   margin-bottom: 30px;
   display: inline-block;
   font-size: 50px;
-}
-
-/* Enquiry Section */
+} /* Enquiry Section */
 .enquiry {
   min-height: auto;
   width: 100vw;
@@ -446,19 +414,17 @@ textarea::placeholder {
 .enquiryForm form button {
   padding: 10px 20px;
   border: none;
-  background-image: linear-gradient(to right , #f95bf6, #532cf9 );
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
   color: #ffffff;
   font-size: 25px;
   transition: color 0.3s ease-in-out;
 }
-
 .enquiryForm button:hover {
-  background-image: linear-gradient(to right , #000000, #000000 );
+  background-image: linear-gradient(to right, #000000, #000000);
   border: 3px solid #f95bf6;
   cursor: pointer;
   color: #f95bf6;
 }
-
 .enquiryAddress {
   text-align: start;
   padding: 10px 30px;
@@ -482,9 +448,7 @@ textarea::placeholder {
   margin-bottom: 30px; /* fix overlap */
   position: relative;
   z-index: 1;
-}
-
-/* Feedback */
+} /* Feedback */
 .feedback {
   min-height: auto;
   text-align: center;
@@ -508,9 +472,7 @@ textarea::placeholder {
 .feedbackText h1 {
   border-bottom: 5px solid #f3e247;
   display: inline-block;
-}
-
-/* Footer */
+} /* Footer */
 .footer {
   position: relative;
   height: auto;
@@ -571,7 +533,6 @@ textarea::placeholder {
   transition: all 0.8s ease-out;
   visibility: hidden;
 }
-
 .fade-section.visible {
   opacity: 1;
   transform: translateY(0);
@@ -580,12 +541,10 @@ textarea::placeholder {
 body {
   padding-top: 100px;
 }
-
-@media (min-width: 769px) and (max-width: 1400px) {
+@media (min-width: 1001px) and (max-width: 1400px) {
   html {
     scroll-padding-top: 100px;
   }
-
   .hero {
     gap: 50px;
     min-height: 85vh;
@@ -609,12 +568,10 @@ body {
     width: 100%;
     font-weight: 100;
   }
-
   #subTextContainer {
     height: fit-content;
     width: 400px;
   }
-
   .heroButtons {
     top: -70px;
     position: relative;
@@ -628,54 +585,46 @@ body {
     box-shadow: 1px 1px 3px rgb(0, 0, 0);
     margin: 0px 10px;
   }
-  .vectorShape
-{
-  width: 100vw;
-  height: 100px;
-  position: absolute;
-  left: -20px;
-  top: 85%;
+  .vectorShape {
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    left: -20px;
+    top: 85%;
+  }
+  #vector {
+    width: 100%;
+    height: 200px;
+  }
+  .aboutUsHeading {
+    font-size: 60px;
+  }
+  .aboutUsContainer {
+    margin-left: 15%;
+  }
+  .aboutUsText {
+    font-size: 18px;
+    margin-top: 30%;
+  }
+  .aboutUsCredentials {
+    width: 30rem;
+    left: 20%;
+    top: 20%;
+  }
+  .cCard #cCardh {
+    color: #f3e247;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  .cCard #cCardp {
+    color: white;
+    font-weight: bolder;
+  }
 }
-#vector
-{
-  width: 100%;
-  height: 200px;
-}
-
- 
-.aboutUsHeading {
-  font-size: 60px;
-}
-
-.aboutUsContainer {
-  margin-left: 15%;
-}
-.aboutUsText {
-  font-size: 18px;
-  margin-top: 30%;
-}
-
-.aboutUsCredentials {
-  width: 30rem;
-  left: 20%;
-  top: 20%;
-}
-.cCard #cCardh {
-  color: #f3e247;
-  font-size: 60px;
-  font-weight: bolder;
-}
-.cCard #cCardp {
-  color: white;
-  font-weight: bolder;
-}
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   html {
     scroll-padding-top: 100px;
-  }
-  /* Navbar */
+  } /* Navbar */
   .navbar {
     flex-direction: column;
     height: 100px;
@@ -718,7 +667,6 @@ body {
     transform-origin: center;
     transition: all 0.3s ease-in-out;
   }
-
   .menuLinks {
     display: flex;
     color: #f3e247;
@@ -737,7 +685,6 @@ body {
     height: 100%;
     width: 100%;
   }
-
   .menuLinks a {
     margin-top: 15px;
     padding: 10px;
@@ -750,7 +697,6 @@ body {
     border-radius: 30px;
     box-shadow: 1px 1px 1px black;
   }
-
   .menuLinks h2 {
     color: #ffffff;
     font-size: 20px;
@@ -775,7 +721,6 @@ body {
   .menuButton.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6.5px, -6.5px);
   }
-
   .mobIcons {
     display: flex;
     flex-direction: column;
@@ -801,8 +746,7 @@ body {
   .mobIcons a {
     box-shadow: 2px 2px 5px black;
     text-decoration: none;
-    border-radius: 50%;
-    /* background-color: #ffffff; */
+    border-radius: 50%; /* background-color: #ffffff; */
     height: 50px;
     width: 50px;
     padding: 10px;
@@ -813,7 +757,6 @@ body {
     align-items: center;
     font-size: 30px;
   }
-
   .mobIcons #whatsapp {
     color: #ffffff;
     background-color: #33b133;
@@ -821,8 +764,7 @@ body {
   .mobIcons #telephone {
     color: #ffffff;
     background-color: blueviolet;
-  }
-  /* Hero */
+  } /* Hero */
   .hero {
     scroll-margin-top: 150px;
     background-image: url("./assets/heroMobile.png");
@@ -854,7 +796,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-
   .heroButtons {
     position: relative;
     top: 40px;
@@ -872,22 +813,18 @@ body {
     box-shadow: 1px 1px 3px rgb(0, 0, 0);
     margin: 0px 10px;
   }
-
- .vectorShape
-{
-  width: 100vw;
-  height: 100px;
-  position: absolute;
-  left: -20px;
-  top: 83%;
-}
-#vector
-{
-  width: 105%;
-  min-height: 120px;
-  max-height: 160px;
-}
-  /* About Us */
+  .vectorShape {
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    left: -20px;
+    top: 83%;
+  }
+  #vector {
+    width: 105%;
+    min-height: 120px;
+    max-height: 160px;
+  } /* About Us */
   .aboutUs {
     display: flex;
     flex-direction: column;
@@ -906,16 +843,13 @@ body {
     width: fit-content;
     border-bottom: 5px solid #f3e247;
   }
-
   .aboutUsHeading h1 {
     padding: 0;
     display: inline-block;
   }
-
   .aboutUsContainer {
     margin-left: 0px;
   }
-
   .aboutUsText {
     margin-top: 0;
     width: 90%;
@@ -923,7 +857,6 @@ body {
     margin-top: 40%;
     font-size: 15px;
   }
-
   .aboutUsCredentials {
     width: 100%;
     left: 0px;
@@ -933,9 +866,7 @@ body {
     font-size: 25px;
   }
   .cCard #cCardp {
-  }
-
-  /* Services */
+  } /* Services */
   .serviceText {
     font-size: 15px;
   }
@@ -965,9 +896,7 @@ body {
     transform: scale(1.05);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
     color: white;
-  }
-
-  /* Enquiry */
+  } /* Enquiry */
   .enquiryText {
     font-size: 15px;
   }
@@ -989,12 +918,9 @@ body {
     height: 250px;
     margin-bottom: 20px;
   }
-
   .feedbackText {
     font-size: 15px;
-  }
-
-  /* Footer */
+  } /* Footer */
   .footerContainer {
     flex-direction: column;
     align-items: center;
@@ -1054,7 +980,6 @@ body {
     width: 100%;
   }
 }
-
 @media (min-width: 1600px) {
   .hero {
     min-height: 90vh;
@@ -1067,28 +992,24 @@ body {
     font-weight: bolder;
     margin-bottom: 30px;
   }
-
   .heroText h2 {
     font-size: 50px;
     font-weight: bolder;
     margin-bottom: 30px;
   }
-
   .heroText h3 {
     font-size: 50px;
     max-width: 500px;
     margin-bottom: 100px;
     font-weight: 100;
   }
-
   .heroText #typedText {
     color: #f3e247;
     border-right: 3px solid #f3e247;
   }
-  #vector
-{
-  top: 700px;
-}
+  #vector {
+    top: 700px;
+  }
   .aboutUsHeading h1 {
     font-size: 200px;
   }
@@ -1099,14 +1020,10 @@ body {
     margin-left: 180px;
     margin-top: 300px;
   }
-
   .aboutUsCredentials {
     top: 150px;
     left: 230px;
-  }
-
-  /* Gallery */
-
+  } /* Gallery */
   .group {
     height: 50vh;
     margin-bottom: 150px;

@@ -1,0 +1,223 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+.navbarLogo {
+  height: 100px;
+  width: 120px;
+  background-image: url("../assets/nextgenstudy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navbarButtons a {
+  position: relative;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  padding: 5px;
+  overflow-y: hidden;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+.navbarButtons a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 4px;
+  background-image: linear-gradient(to left, red, orange);
+  transition: width 0.3s ease;
+}
+.navbarButtons a:hover::after {
+  width: 100%;
+}
+.navbarButtons #whatsapp {
+  color: #33b133;
+}
+.menuButton {
+  display: none;
+  height: 20px;
+  width: 20px;
+}
+.menuButton span {
+  height: 4px;
+  width: 25px;
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  display: block;
+  margin: 5px 0;
+}
+.menuLinks {
+  display: none;
+}
+.mobIcons {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    height: 100px;
+    box-shadow: 3px 3px 5px black;
+  }
+  .navbarLogo {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .navbarButtons {
+    display: none;
+    overflow-y: hidden;
+    width: 100%;
+    padding: 3px 3px;
+    margin-bottom: 10px;
+  }
+  .navbarButtons a {
+    font-size: 16px;
+    margin: 5px;
+    padding: 8px 8px;
+    display: inline-block;
+    box-shadow: 1px 1px 2px black;
+  }
+
+
+  /* Mobile Menu */
+  .menuButton {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 45px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .menuButton span {
+    display: block;
+    color: #f3e247;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .menuLinks {
+    display: flex;
+    color: #f3e247;
+    position: fixed;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+    transform: translateX(100%);
+    flex-direction: column;
+    top: 100px;
+    left: 0px;
+    background-image: linear-gradient(to right, #f95bf6, #532cf9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+    width: 100%;
+  }
+  .menuLinks a {
+    margin-top: 15px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px black;
+  }
+  .menuLinks h2 {
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    top: 200px;
+    text-align: center;
+  }
+  .menuLinks a:hover {
+    color: #f3e247;
+  }
+  .menuLinks.active {
+    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .menuButton.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6.5px, 6.5px);
+  }
+  .menuButton.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menuButton.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6.5px, -6.5px);
+  }
+  .mobIcons {
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    position: fixed;
+    top: 75%;
+    right: 0%;
+    height: 100px;
+    width: 100px;
+    animation: float 0.5s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .mobIcons a {
+    box-shadow: 2px 2px 5px black;
+    text-decoration: none;
+    border-radius: 50%; /* background-color: #ffffff; */
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .mobIcons #whatsapp {
+    color: #ffffff;
+    background-color: #33b133;
+  }
+  .mobIcons #telephone {
+    color: #ffffff;
+    background-color: blueviolet;
+  }
+}
+@media (max-width:520px)
+{
+  .mobIcons
+  {
+    right: -5%;
+  }
+}

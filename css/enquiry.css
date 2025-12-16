@@ -1,0 +1,128 @@
+.enquiry {
+  width: 100vw;
+  background-color: #000000;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.enquiryText {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #f3e247;
+  padding-bottom: 5px;
+  padding-top: 30px;
+}
+.enquiryContainer {
+  display: flex;
+  min-height: 60vh;
+}
+.enquiryForm {
+  text-align: start;
+  padding: 10px 30px;
+  flex: 1;
+}
+.enquiryForm form input,
+select,
+textarea {
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 80%;
+  font-size: 20px;
+}
+.enquiryForm form input,
+select,
+textarea::placeholder {
+  color: #ffffff;
+  background-color: #00000031;
+}
+.enquiryForm form label {
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+.enquiryForm form button {
+  padding: 10px 20px;
+  border: none;
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  color: #ffffff;
+  font-size: 25px;
+  transition: color 0.3s ease-in-out;
+}
+.enquiryForm button:hover {
+  background-image: linear-gradient(to right, #000000, #000000);
+  border: 3px solid #f95bf6;
+  cursor: pointer;
+  color: #f95bf6;
+}
+.enquiryAddress {
+  text-align: start;
+  padding: 10px 30px;
+  flex: 1;
+}
+.enquiryAddress p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: grey;
+}
+.enquiryAddress h1 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+.enquiryAddress iframe {
+  margin-top: 20px;
+  width: 90%;
+  height: 50vh;
+  display: block;
+  margin-bottom: 30px; /* fix overlap */
+  position: relative;
+  z-index: 1;
+}
+.enquiryContainerResponsive
+{
+width: 1400px;
+max-width: 90%;
+background-color: #000000;
+text-align: center;
+} 
+
+@media (max-width: 768px) {
+  /* Enquiry */
+  .enquiryText {
+    font-size: 25px;
+  }
+  .enquiryContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .enquiryForm,
+  .enquiryAddress {
+    padding: 15px;
+  }
+  .enquiryForm form input,
+  select,
+  textarea {
+    width: 100%;
+  }
+  .enquiryAddress iframe {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+ 
+}

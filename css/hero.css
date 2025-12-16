@@ -1,0 +1,136 @@
+.hero {
+  height: 85vh;      
+  max-height: 800px; 
+  min-height: 800px;   
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 50px;
+  margin-top: 100px;
+}
+
+.heroText {
+  color: #ffffff;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.heroText h1 {
+  background-image: linear-gradient(to left, #f95bf6, #532cf9);
+  background-clip: text;
+  color: transparent;
+  font-size: 80px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.heroText h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.heroText #subText {
+  font-size: 20px;
+  max-width: 500px;
+  margin-bottom: 100px;
+  font-weight: 100;
+}
+.heroButtons {
+  position: relative;
+  top: -50px;
+}
+.heroButtons a {
+  font-size: 25px;
+  padding: 10px 10px;
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  border-radius: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 1px 1px 3px rgb(0, 0, 0);
+  margin: 0px 10px;
+}
+.heroText #typedText {
+  color: #f3e247;
+} 
+@media (max-width: 1024px)
+{
+    .heroText h1 {
+      font-size: 60px;
+    }
+    .heroText #subHeading {
+      font-size: 40px;
+    }
+    .heroText #subText {
+      font-size: 20px;
+    }
+    .heroButtons a {
+      font-size: 20px;
+    }
+  
+}
+@media (max-width: 768px) {
+ 
+    /* Hero */
+  .hero {
+    margin-top: 0;
+     padding: 0;
+    scroll-margin-top: 150px;
+    background-image: url("../assets/heroMobile.png");
+    justify-content: center;
+  }
+  .heroText
+  {
+    max-width: 500px;
+    padding: 0px 10px 0px;
+  }
+  .heroText h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+  }
+  .heroText #subHeading {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .heroText #subText {
+    padding-top: 10px;
+    font-size: 18px;
+    width: 100%;
+    text-align: justify;
+    font-weight: 200;
+  }
+  #subTextContainer {
+    height: 100px;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroButtons {
+    width: 100%;
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroButtons a {
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+    margin: 0px 10px;
+  }
+}

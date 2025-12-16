@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+  visibility: hidden;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+  .vectorShape {
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    left: -20px;
+    top: 83%;
+  }
+  #vector {
+    width: 105%;
+    min-height: 120px;
+    max-height: 160px;
+  }
+}

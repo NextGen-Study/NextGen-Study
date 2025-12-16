@@ -1,0 +1,201 @@
+
+.aboutUs {
+  background-color: black;
+   max-height: 600px; 
+  min-height: 800px;   
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUsResponsive
+{
+   max-height: 800px; 
+  min-height: 800px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.aboutUsHeading {
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 90px;
+  font-weight: bold;
+  color: white;
+}
+.aboutUsHeading h1 {
+  padding: 20px;
+   background-image: linear-gradient(to left, #f95bf6, #532cf9);
+  background-clip: text;
+  color: transparent;
+}
+.aboutUsContainer {
+  max-width: 900px;
+  padding-left: 10%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.aboutUsText {
+  color: white;  
+  max-width: 90%;
+  max-height: 50%;
+  width: 100%;
+  height: auto;
+  font-weight: lighter;
+  font-size: 1.5em;
+  text-align: justify;
+}
+.aboutUsCredentials {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  max-width: 90%;
+}
+.cCard #cCardh {
+  color: #f3e247;
+  font-size: 70px;
+  font-weight: bolder;
+      text-align: center;
+
+}
+.cCard #cCardp {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  width: 100px;
+ 
+
+}
+@media (max-width :1520px) {
+  .aboutUs
+  {
+    background-position: right;
+  }
+  .aboutUsResponsive
+  {
+    width: 95%;
+  }
+  .aboutUsHeading
+  {
+      font-size: 70px;
+      width: fit-content;
+  }
+  .aboutUsHeading h1
+  {
+      padding: 10px;
+      display: inline-block;
+  }
+  .aboutUsContainer
+  {
+    max-width: 600px;
+    max-height: 500px;
+  }
+  .aboutUsText
+  {
+      font-size: 1.5em;
+  }
+  .cCard #cCardh
+  {
+      font-size: 50px;
+  }
+  .cCard #cCardp
+  {
+      font-size: 15px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .aboutUs {
+    width: 100%; 
+  }
+  .aboutUsContainer
+  {
+    max-width: 600px;
+  }
+  .aboutUsResponsive
+  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  .aboutUsHeading {
+      margin-bottom: 5%;
+    font-size: 40px;
+    width: fit-content;
+    text-align: center;
+    border-bottom: #f3e247 5px solid;
+    display: inline-block;
+  }
+  .aboutUsHeading h1 {
+    margin-top: 0px;
+    padding: 0px;
+  }
+  .aboutUsContainer {
+    height: 100%;
+    margin-left: 0px;
+    padding: 0;
+  }
+  
+  .aboutUsCredentials {
+    width: 100%;
+  }
+  .cCard #cCardh {
+    font-size: 45px;
+  }
+  .cCard #cCardp {
+    font-size: 25px;
+    width: 50px;
+    text-align: justify;
+
+  }
+}
+@media (max-width: 768px) {
+  .aboutUsHeading
+  {
+      font-size: 30px;
+      margin-bottom: 10%;
+  }
+}
+
+
+@media (max-width: 520px) {
+  .aboutUsContainer
+  {
+    max-width: 400px;
+  }
+  .aboutUsText
+  {
+      font-size: 1.2em;
+  }
+  .aboutUsCredentials
+  {
+    max-width: 80%;
+  }
+  .cCard #cCardh {
+    font-size: 40px;
+  }
+  .cCard #cCardp {
+    font-size: 20px;
+  }
+  .aboutUsHeading {
+    font-size: 25px;
+    border-bottom: #f3e247 5px solid;
+}
+.aboutUsHeading h1 {
+    display: inline;
+    
+}
+}

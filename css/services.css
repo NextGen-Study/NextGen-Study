@@ -1,0 +1,122 @@
+.services {
+  background-color: #000000;
+  text-align: center;
+  padding: 40px;
+  height: auto;
+  min-height: 900px;
+}
+
+.serviceText {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #f3e247;
+  padding-bottom: 5px;
+}
+.serviceCards {
+  display: grid;
+  height: 80vh;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.card {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center; /* Glass effect core */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  padding: 15px;
+}
+.card:hover .card-title,
+.card:hover .card-desc {
+  color: #ffffff;
+}
+.card:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  color: white;
+}
+.card-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.card-title {
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  background-clip: text;
+  color: transparent;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-desc {
+  font-size: 20px;
+  color: #ffffff;
+}
+@media (max-width: 1024px)  
+{
+  .card {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+}
+
+@media (max-width: 768px) {
+  /* Services */
+  .serviceText {
+    font-size: 25px;
+  }
+  .serviceCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
+    padding: 20px;
+    height: auto;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+  .card-desc {
+    font-size: 16px;
+  }
+  .card:hover .card-title,
+  .card:hover .card-desc {
+    color: #ffffff;
+  }
+  .card:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    color: white;
+  }
+}

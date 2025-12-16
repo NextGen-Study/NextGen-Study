@@ -1,0 +1,32 @@
+.feedback {
+  min-height: auto;
+  text-align: center;
+  z-index: 0;
+  width: 100vw;
+  background-color: #000000;
+}
+.feedbackText {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-width: fit-content;
+  display: inline-block;
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  padding-top: 30px;
+}
+.feedbackText h1 {
+  border-bottom: 5px solid #f3e247;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  
+  .feedbackText {
+    font-size: 25px;
+  } /* Footer */
+ 
+}

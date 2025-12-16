@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Coaching Center in Faridabad</title>
-    <link rel="icon" type="image/svg+xml" href="assets/logoSVG.svg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="./assets/nextgenstudy.png" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/enquiry.css">
+    <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -15,7 +24,7 @@
     />
   </head>
  <body onload="document.querySelector('.hero').classList.add('visible')">
-    <div class="navbar">
+    <nav class="navbar">
       <div class="navbarLogo"></div>
        <div class="menuButton">
           <span></span>
@@ -36,7 +45,7 @@
        
         
       </div>
-    </div>
+    </nav>
     <div class="menuLinks">
        <a href="#home"> <i class="fa-solid fa-house"></i>Home  </a>
         <a href="#aboutUs"> <i class="fa-solid fa-circle-info"></i> About Us  </a>
@@ -57,10 +66,11 @@
       <a id="telephone" href="tel:+919773869315"><i class="fa-solid fa-phone"></i></a>
     </div>
     <div class="heroContainer">
+     
     <div class="hero" id="home">
       <div class="heroText">
         <h1>
-          NextGen Study 
+          Nextgen Study 
         </h1>
         <h2 id="subHeading">Best Coaching Center in <br>Faridabad for <span id="typedText"></span></h2>
         <div id="subTextContainer">
@@ -77,13 +87,27 @@
          <h1>Best Study Centre in Faridabad</h1>
          <h1>Best Tution Centre in Faridabad</h1> -->
       </div>
-      <div class="vectorShape">
+      <!-- <div class="vectorShape">
       <img src="assets/Wavy.png" alt="" id="vector">
-      </div>
-      <!-- <div class="heroImage"></div> -->
+      </div> -->
+    
     </div>
     </div>
+    <div class="video">
+
+  <!-- Desktop / Tablet Video -->
+  <video id="desktopVideo" autoplay loop muted playsinline>
+    <source src="./videos/nextgenstudyAdvertisementDesktop.mp4" type="video/mp4">
+  </video>
+
+  <!-- Mobile Video -->
+  <video id="mobileVideo" autoplay loop muted playsinline>
+    <source src="./videos/nextgenstudyAdvertisementMobile.mp4" type="video/mp4">
+  </video>
+
+</div>
     <div class="aboutUs" id="aboutUs">
+      <div class="aboutUsResponsive">
       <div class="aboutUsHeading">
         <h1>About</h1> <h1>Us</h1>
       </div>
@@ -91,33 +115,23 @@
         <div class="aboutUsCredentials">
           <div class="cCard">
           <h1 id="cCardh">150+</h1>
-          <p id="cCardp">Students Enrolled</p>
+          <p id="cCardp">Students <br>Enrolled</p>
           </div>
           <div class="cCard">
           <h1 id="cCardh">15+</h1>
-          <p id="cCardp">Courses Offered</p>
+          <p id="cCardp">Courses <br> Offered</p>
           </div>
           <div class="cCard">
           <h1 id="cCardh">99%</h1>
-          <p id="cCardp">Score Obtained</p>
+          <p id="cCardp">Score <br> Obtained</p>
           </div>
         </div>
         <div class="aboutUsText">
           <p>
-            NextGen Study is the best tuition centre in Jawahar Colony,
-            Faridabad, offering subject-focused tuition for students of Classes
-            9 to 12. We specialize in Maths tuition, Physics tuition, Chemistry
-            tuition, Accountancy tuition, Economics tuition, and English
-            tuition, all conducted in small batches by experienced faculty for
-            better clarity and results. We also provide a spoken English course
-            to help students improve their communication skills and confidence.
-            We are also recognized as the best coaching centre in Faridabad,
-            delivering professional IT training for college students in Java,
-            C++, Python, Web Development, and Data Structures. Our IT programs
-            are practical, job-oriented, and designed to build strong technical
-            foundations for career.
+           Nextgen Study provides practical IT training programs along with tuition classes for BCA, MCA, B-Tech, and BBA students. We focus on hands-on learning, real projects, and beginner-friendly guidance to build strong technical and academic skills. Our mission is to help every learner become confident, exam-ready, and industry-ready.
           </p>
         </div>
+      </div>
       </div>
     </div>
     <div class="services">
@@ -203,8 +217,11 @@
         </div>
       </div>
     </div>
+
+    
  <div class="gallery" id="gallery">
-    <h1>Our Gallery</h1>
+  <h1>Our Gallery</h1>
+    
 <div class="carousel basic">
     <div class="group">
   <div class="gcard"><img src="./gallery/1.jpg" alt=""></div>
@@ -239,7 +256,8 @@
 
 
 
-    <div class="enquiry" id="enquiry">
+     <div class="enquiry" id="enquiry">
+        <div class="enquiryContainerResponsive">
       <div class="enquiryText">
         <h1>Get In Touch</h1>
       </div>
@@ -247,13 +265,13 @@
         <div class="enquiryForm">
           <form action="https://formspree.io/f/xblayzng" method="POST">
             <label for="name">Name</label><br />
-            <input type="text" name="name" id="name" /><br />
+            <input type="text" name="name" id="name"  autocomplete="on"/><br />
             <label for="email">Email</label><br />
-            <input type="email" name="email" id="email" /><br />
+            <input type="email" name="email" id="email"  autocomplete="on"/><br />
             <label for="phone">Phone</label><br />
-            <input type="tel" name="phone" id="phone" /><br />
+            <input type="tel" name="phone" id="phone" autocomplete="on" /><br />
             <label for="course">Course</label><br />
-            <select name="course" id="">
+            <select name="course" id="course">
               <option value="">-- Select Course --</option>
               <option value="Java Programming">Java Programming</option>
               <option value="Web Development">Web Development</option>
@@ -339,6 +357,7 @@
           ></iframe>
         </div>
       </div>
+      </div>
     </div>
 
     <div class="feedback" id="feedback">
@@ -354,7 +373,7 @@
     </div>
 
 
-    <div class="footer">
+    <footer class="footer">
       <div class="footerContainer">
         <div class="footerLogo">
           <img src="./assets/nextgenstudy.png" alt="" height="200px" width="200px" />
@@ -389,7 +408,7 @@
           Rights Reserved
         </p>
       </div>
-    </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

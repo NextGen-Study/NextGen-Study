@@ -1,0 +1,2 @@
+/components/*   /components/:splat   200
+/:page          /components/:page.html   200

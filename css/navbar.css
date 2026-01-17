@@ -15,7 +15,7 @@
 .navbarLogo {
   height: 100px;
   width: 120px;
-  background-image: url("../assets/nextgenstudy.png");
+  background-image: url("../assets/nextgen-study.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -40,7 +40,7 @@
   bottom: -4px;
   width: 0%;
   height: 4px;
-  background-image: linear-gradient(to left, red, orange);
+ background-image: linear-gradient(to left, #f95bf6, #532cf9);
   transition: width 0.3s ease;
 }
 .navbarButtons a:hover::after {
@@ -68,7 +68,7 @@
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   /* Navbar */
   .navbar {
     flex-direction: column;

@@ -1,6 +1,6 @@
  :root {
-      --primary: #f95bf6;
-      --secondary: #532cf9;
+      --primary: cyan;
+      --secondary: #00ff9d;
       --accent: #facc15;
       --bg: #000000;
     }
@@ -9,19 +9,19 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
       background: var(--bg);
-      color: #cccccc;
+      color: #ffffff;
       line-height: 1.6;
     }
 
     /* HEADER */
     .hero {
       background: linear-gradient(to right, var(--primary), var(--secondary));
-      color: #fff;
+      color: #000000;
       padding: 60px 20px;
     }
 
@@ -37,6 +37,11 @@
     .hero h1 {
       font-size: 2.5rem;
       margin-bottom: 15px;
+    }
+    h4
+    {
+      color: var(--primary);
+      margin-bottom: 5px;
     }
 
     .hero p {
@@ -62,11 +67,16 @@
     /* SECTION */
     section {
       padding: 60px 20px;
+      background: url(img.png);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
     .container {
       max-width: 1200px;
       margin: auto;
+      
     }
 
     h2 {
@@ -83,10 +93,11 @@
 
     .card {
       /* background: #000000; */
-      background: #000000;
+      background: transparent;
+      backdrop-filter: blur(10px);
       padding: 25px;
       border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.158);
+       box-shadow: 0 8px 20px rgba(66, 66, 66, 0.404);
     }
 
     .card h3 {
@@ -106,13 +117,13 @@
     /* CTA */
     .cta {
       background: linear-gradient(to right, var(--primary), var(--secondary));
-      color: #fff;
+      color: #000000;
       text-align: center;
       padding: 50px 20px;
     }
 
     .cta h2 {
-      color: #fff;
+      color: #000000;
     }
 
     .cta a {
@@ -134,6 +145,52 @@
       padding: 20px;
       font-size: 0.9rem;
     }
+
+     .tech-used {
+  background-color: #0b0b0b;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tech-used h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+
+.tech-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.tech-card p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(249, 91, 246, 0.25);
+}
+
 
     /* RESPONSIVE */
     @media (max-width: 900px) {

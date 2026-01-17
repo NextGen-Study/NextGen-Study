@@ -55,24 +55,32 @@
   background-color: #000000;
 }
 
-.gallery h1 {
+.gallery h2 {
   background-image: linear-gradient(to right, #f95bf6, #532cf9);
   background-clip: text;
   color: transparent;
   border-bottom: 5px solid #f3e247;
   display: inline-block;
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: bold;
+}
+@media (max-width: 1024px ) {
+  
+.gcard
+{
+  height: 300px;
+  width: 400px;
+}
 }
 
 @media (max-width: 768px) {
-  .gallery h1 {
+  .gallery h2 {
     background-clip: text;
     color: transparent;
     border-bottom: 5px solid #f3e247;
     padding: 10px;
     margin-bottom: 30px;
     display: inline-block;
-    font-size: 45px;
     font-weight: bold;
   }
   .gallery {
@@ -81,7 +89,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 65vh;
+    height: 75vh;
     width: 100%;
   }
   .gcard

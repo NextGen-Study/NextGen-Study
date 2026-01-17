@@ -8,7 +8,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .fade-section {
   opacity: 0;

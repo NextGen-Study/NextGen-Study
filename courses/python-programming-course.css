@@ -21,7 +21,7 @@
     /* HEADER */
     .hero {
       background: linear-gradient(to right, var(--primary), var(--secondary));
-      color: #fff;
+      color: #000000;
       padding: 60px 20px;
     }
 
@@ -117,13 +117,13 @@
     /* CTA */
     .cta {
       background: linear-gradient(to right, var(--primary), var(--secondary));
-      color: #fff;
+      color: #000000;
       text-align: center;
       padding: 50px 20px;
     }
 
     .cta h2 {
-      color: #fff;
+      color: #000000;
     }
 
     .cta a {

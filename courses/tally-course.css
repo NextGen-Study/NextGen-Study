@@ -1,7 +1,7 @@
  :root {
       --primary: #0051ff;
       --secondary: #bf00ff;
-      --accent: #153bfa;
+      --accent: #fffb00;
       --bg: #000000;
     }
 
@@ -21,7 +21,7 @@
     /* HEADER */
     .hero {
       background: linear-gradient(to right, var(--primary), var(--secondary));
-      color: #000000;
+      color: #ffffff;
       padding: 60px 20px;
     }
 
@@ -117,13 +117,13 @@
     /* CTA */
     .cta {
       background: linear-gradient(to right, var(--primary), var(--secondary));
-      color: #000000;
+      color: #ffffff;
       text-align: center;
       padding: 50px 20px;
     }
 
     .cta h2 {
-      color: #000000;
+      color: #ffffff;
     }
 
     .cta a {

@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   background-color: #000000;
-  background-image: url("../assets/hero.png");
+  background-image: url("../assets/homepage/best-IT-institute-faridabad.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,7 +84,7 @@
   .hero {
      padding: 0;
     scroll-margin-top: 100px;
-    background-image: url("../assets/heroMobile.png");
+    background-image: url("../assets/homepage/best-coaching-center-faridabad.png");
     justify-content: center;
     min-height: 600px;
   }

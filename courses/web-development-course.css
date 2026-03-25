@@ -38,9 +38,9 @@
       font-size: 2.5rem;
       margin-bottom: 15px;
     }
-    h4
+    h4 
     {
-      color: var(--primary);
+      color: var(--secondary);
       margin-bottom: 5px;
     }
 
@@ -49,10 +49,11 @@
       margin-bottom: 20px;
     }
 
-    .duration {
+    .duration a {
       background: var(--accent);
       color: #000;
       display: inline-block;
+      text-decoration: none;
       padding: 10px 18px;
       border-radius: 6px;
       font-weight: bold;
@@ -80,7 +81,7 @@
     }
 
     h2 {
-      color: var(--primary);
+      color: var(--secondary);
       margin-bottom: 20px;
       font-size: 2rem;
     }

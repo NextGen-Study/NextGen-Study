@@ -32,14 +32,14 @@
 }
 .heroText h2 {
   font-size: 2rem;
-  font-weight: bolder;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 .heroText #subText {
   font-size: 1em;
   max-width: 500px;
   margin-bottom: 100px;
-  font-weight: 100;
+  font-weight: 400;
 }
 .heroImage img
 {

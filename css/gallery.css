@@ -28,7 +28,7 @@
   flex: 0 0 auto;
   width: 500px;
   height: 400px;
-  color: white;
+  color: var(--text);
   border-radius: 24px;
   box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
   display: flex;
@@ -52,14 +52,14 @@
   width: 100%;
    padding: 40px 0;
   height: auto;
-  background-color: #000000;
+  background-color: var(--bg);
 }
 
 .gallery h2 {
-  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
   background-clip: text;
   color: transparent;
-  border-bottom: 5px solid #f3e247;
+  border-bottom: 5px solid var(--accent);
   display: inline-block;
   font-size: 40px;
   font-weight: bold;
@@ -77,7 +77,7 @@
   .gallery h2 {
     background-clip: text;
     color: transparent;
-    border-bottom: 5px solid #f3e247;
+    border-bottom: 5px solid var(--accent);
     padding: 10px;
     margin-bottom: 30px;
     display: inline-block;

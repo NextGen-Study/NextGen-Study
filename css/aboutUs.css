@@ -1,6 +1,6 @@
 
 .aboutUs {
-  background-color: black;
+  background-color: var(--bg);
    max-height: 600px; 
   min-height: 800px;   
   background-size: cover;
@@ -27,11 +27,11 @@
   flex-direction: column;
   font-size: 5rem;
   font-weight: bold;
-  color: white;
+  color: var(--text);
 }
 .aboutUsHeading h2 {
   padding: 20px;
-  background-image: linear-gradient(to left, #f95bf6, #532cf9);
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
   background-clip: text;
   color: transparent;
 }
@@ -45,7 +45,7 @@
   flex-direction: column;
 }
 .aboutUsText {
-  color: white;  
+  color: var(--text);  
   max-width: 90%;
   max-height: 50%;
   width: 100%;
@@ -63,14 +63,14 @@
   max-width: 90%;
 }
 .cCard .cCardh {
-  color: #f3e247;
+  color: var(--accent);
   font-size: 70px;
   font-weight: bolder;
       text-align: center;
 
 }
 .cCard .cCardp {
-  color: white;
+  color: var(--text);
   font-size: 20px;
   font-weight: bolder;
   text-align: center;
@@ -138,7 +138,7 @@
     font-size: 40px;
     width: fit-content;
     text-align: center;
-    border-bottom: #f3e247 5px solid;
+    border-bottom: var(--accent) 5px solid;
     display: inline-block;
   }
   .aboutUsHeading h2 {
@@ -194,7 +194,7 @@
   }
   .aboutUsHeading {
     font-size: 25px;
-    border-bottom: #f3e247 5px solid;
+    border-bottom: var(--accent) 5px solid;
 }
 .aboutUsHeading h2 {
     display: inline;

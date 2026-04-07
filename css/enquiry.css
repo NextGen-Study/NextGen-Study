@@ -1,7 +1,6 @@
 .enquiry {
   width: 100vw;
-  background-color: #000000;
-  /* text-align: center; */
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,11 +11,11 @@
   font-size: 30px;
   font-weight: bold;
   display: inline-block;
-  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
   background-clip: text;
   color: transparent;
   margin-bottom: 30px;
-  border-bottom: 5px solid #f3e247;
+  border-bottom: 5px solid var(--accent);
   padding-bottom: 5px;
   padding-top: 30px;
 }
@@ -47,27 +46,27 @@ textarea {
 .enquiryForm form input,
 select,
 textarea::placeholder {
-  color: #ffffff;
-  background-color: #00000031;
+  color: var(--text);
+  background-color: var(--bg);
 }
 .enquiryForm form label {
   margin-top: 20px;
   font-size: 20px;
-  color: white;
+  color: var(--text);
 }
 .enquiryForm form button {
   padding: 10px 20px;
   border: none;
-  background-image: linear-gradient(to right, #f95bf6, #532cf9);
-  color: #ffffff;
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
+  color: var(--text);
   font-size: 25px;
   transition: color 0.3s ease-in-out;
 }
 .enquiryForm button:hover {
-  background-image: linear-gradient(to right, #000000, #000000);
-  border: 3px solid #f95bf6;
+  background-image: linear-gradient(to right, var(--bg), var(--bg));
+  border: 3px solid var(--secondary);
   cursor: pointer;
-  color: #f95bf6;
+  color: var(--secondary);
 }
 .enquiryAddress {
   text-align: start;
@@ -82,7 +81,7 @@ textarea::placeholder {
 .enquiryAddress h3 {
   margin-top: 20px;
   font-size: 20px;
-  color: white;
+  color: var(--text);
 }
 .enquiryAddress iframe {
   margin-top: 20px;
@@ -97,7 +96,7 @@ textarea::placeholder {
 {
 width: 1400px;
 max-width: 90%;
-background-color: #000000;
+background-color: var(--bg);
 text-align: center;
 } 
 

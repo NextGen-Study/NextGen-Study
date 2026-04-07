@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NextGen Story Section</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Section */
+.story-section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Wrapper (500% width) */
+.story-wrapper {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+/* Each panel */
+.panel {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+}
+
+/* Different colors */
+.panel:nth-child(1) { background: #111; }
+.panel:nth-child(2) { background: #1e90ff; }
+.panel:nth-child(3) { background: #28a745; }
+.panel:nth-child(4) { background: #ff5733; }
+.panel:nth-child(5) { background: #6f42c1; }
+
+.content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.content h1 {
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="story-section">
+  <div class="story-wrapper">
+
+    <div class="panel">
+      <div class="content">
+        <h1>Welcome to NextGen Study</h1>
+        <p>जहाँ learning होती है practical और future-ready 🚀</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="content">
+        <h1>Our Courses</h1>
+        <p>BCA, MCA, BTech, BBA + IT Training</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="content">
+        <h1>Practical Learning</h1>
+        <p>Real Projects + Hands-on Experience</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="content">
+        <h1>Student Success</h1>
+        <p>From Beginner to Industry Ready 💼</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="content">
+        <h1>Join Now</h1>
+        <p>Limited Seats Available — Enroll Today!</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+
+gsap.registerPlugin(ScrollTrigger);
+
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".story-section",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (sections.length - 1),
+    end: () => "+=" + document.querySelector(".story-wrapper").offsetWidth
+  }
+});
+
+</script>
+
+</body>
+</html>

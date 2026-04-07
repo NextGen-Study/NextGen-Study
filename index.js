@@ -1,24 +1,62 @@
-  function fadeAnimation() {
-  const sections = document.querySelectorAll('.heroText, .aboutUsText, .aboutUsHeading, .serviceText, .serviceCards, .carousel basic, .enquiryText, .enquiryContainer, .feedbackText');
+ 
+gsap.registerPlugin(ScrollTrigger);
 
-  
-  sections.forEach(section => section.classList.add('fade-section'));
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      } else {
-        entry.target.classList.remove('visible');
-      }
-    });
-  }, { threshold: 0.1 }); 
+let navbarTimeline = gsap.timeline();
 
-  sections.forEach(section => observer.observe(section));
+navbarTimeline.from(".navbarLogo", {
+  y: -100,
+  opacity: 0,
+  duration: 0.5,
+});
+
+navbarTimeline.from(".navbarButtons a", {
+  y: 100,
+  opacity: 0,
+  duration: 0.3,
+  stagger: 0.2,
+});
+
+gsap.to(".img1", {
+  y : 10,
+  duration: 1,
+  repeat: -1,
+  yoyo: true
+})
+gsap.from(".heroText", {
+  opacity: 0,
+  duration: 0.3,
+  y: 50,
+})
+
+
+gsap.to(".highlight", {
+  yPercent: -100 * 7,
+  duration: 10,
+  ease: "none",  
+  repeat: -1
+});
+
+const sections = document.querySelectorAll("#scroll-text");
+
+gsap.to(".scroll-container", {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scroll-container",
+    start: "top top",
+    end: () => "+=" + (sections.length * window.innerWidth),
+    pin: true,
+    scrub: 1
   }
-
-  fadeAnimation();
-
+});
+document.body.addEventListener("mousemove", (e) => {
+  gsap.to(".cursor", {
+    duration: 0.3,
+    x: e.clientX,
+    y: e.clientY,
+  });
+});
 
   function toggleMenu() {
 const menuBtn = document.querySelector('.menuButton');
@@ -38,52 +76,4 @@ links.forEach(link => {
 
   toggleMenu();
 
-  const subjects = [
-      "Web Development",
-      "Python Programming",
-      "C++",
-      "Data Structures",
-      "Java",
-      "Accountancy",
-      "Economics",
-      "Mathematics",
-      "Physics",
-      "Chemistry",
-      "English",
-      "Digital Marketing",
-      "Graphic Design"
-    ];
-
-     const typedText = document.getElementById("typedText");
-    let subjectIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 120;
-
-    function typeAnimation() {
-      const currentSubject = subjects[subjectIndex];
-
-      if (!isDeleting) {
-        typedText.textContent = currentSubject.substring(0, charIndex + 1);
-        charIndex++;
-
-        if (charIndex === currentSubject.length) {
-          isDeleting = true;
-          setTimeout(typeAnimation, 1000);
-          return;
-        }
-      } else {
-        typedText.textContent = currentSubject.substring(0, charIndex - 1);
-        charIndex--;
-
-        if (charIndex === 0) {
-          isDeleting = false;
-          subjectIndex = (subjectIndex + 1) % subjects.length;
-        }
-      }
-
-      const delay = isDeleting ? 60 : typingSpeed;
-      setTimeout(typeAnimation, delay);
-    }
-
-    document.addEventListener("DOMContentLoaded", typeAnimation);
+  

@@ -1,0 +1,38 @@
+.scroll-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+#scroll-text {
+    flex: 0 0 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scroll-text p {
+    font-size: clamp(40px, 10vw, 150px);
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.1;
+    word-break: break-word;
+
+    background-image: linear-gradient(to right, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 768px) {
+    #scroll-text p {
+        font-size: clamp(30px, 12vw, 80px);
+    }
+}
+
+@media (max-width: 480px) {
+    #scroll-text p {
+        font-size: clamp(24px, 14vw, 60px);
+    }
+}

@@ -1,14 +1,48 @@
+:root
+{
+    --primary: #532cf9;
+    --secondary: #f95bf6;
+    --accent: #facc15;
+    --bg: #000000;
+    --text: #ffffff;
+}
+.commerce
+{
+    --primary: #7cff1b;
+    --secondary: #00c9ed;
+    --accent: #00fac0;
+    --bg: #000000;
+    --text: #ffffff;
+}
+
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
   overflow-x: hidden;
+  background-color: var(--bg);
 }
+.commerce
+{
+  margin-top: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
   font-family: 'Poppins', sans-serif;
+}
+.cursor
+{
+  height: 50px;
+  width: 50px;
+  background-image: url("../assets/homepage/cursor.png");
+  background-size: cover;
+  position: fixed;
+  z-index: 999;
 }
 .fade-section {
   opacity: 0;
@@ -21,6 +55,7 @@ html {
   transform: translateY(0);
   visibility: visible;
 }
+
 @media (max-width: 768px) {
   html {
     scroll-padding-top: 100px;

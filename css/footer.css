@@ -2,7 +2,7 @@
   position: relative;
   height: auto;
   width: 100%;
-  background-image: url(../assets/homepage/nextgen-study-institute.png);
+  background: linear-gradient( 50deg, var(--primary), var(--secondary));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,14 +21,14 @@
   width: fit-content;
 }
 .footerIcons {
-  color: white;
+  color: var(--text);
   font-size: 30px;
   padding: 10px;
   padding-top: 100px;
   width: 200px;
 }
 .footerIcons a {
-  color: white;
+  color: var(--text);
   font-size: 25px;
 }
 .footerText {
@@ -36,13 +36,13 @@
   text-align: center;
   padding: 10px;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--text);
 }
 .footerLinks {
   text-align: center;
   padding-top: 50px;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--text);
 }
 .footerLinks a {
   padding: 10px;
@@ -50,7 +50,7 @@
   display: block;
   text-align: center;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--text);
 }
 
 @media (max-width: 768px) {

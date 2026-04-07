@@ -1,6 +1,6 @@
 .video {
-   max-height: 800px; 
-  min-height: 800px;   
+   /* max-height: 800px; 
+  min-height: 800px;    */
   position: relative;
   width: 100vw;
   height: 100vh;

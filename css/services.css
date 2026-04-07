@@ -1,5 +1,5 @@
 .services {
-  background-color: #000000;
+  background-color: var(--bg);
   text-align: center;
   padding: 40px;
 }
@@ -10,11 +10,11 @@
   font-size: 30px;
   font-weight: bold;
   display: inline-block;
-  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
   background-clip: text;
   color: transparent;
   margin-bottom: 30px;
-  border-bottom: 5px solid #f3e247;
+  border-bottom: 5px solid var(--accent);
   padding-bottom: 5px;
 }
 .serviceCards {
@@ -39,21 +39,21 @@
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--text);
   transition: all 0.3s ease;
   border-radius: 10px;
   padding: 15px;
 }
 .card:hover .card-title,
 .card:hover .card-desc {
-  color: #ffffff;
+  color: var(--text);
 }
 .card:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.05);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(to right, #f95bf6, #532cf9);
-  color: white;
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
+  color: var(--text);
 }
 .card-image {
   width: 150px;
@@ -62,7 +62,7 @@
   margin-bottom: 15px;
 }
 .card-title {
-  background-image: linear-gradient(to right, #f95bf6, #532cf9);
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
   background-clip: text;
   color: transparent;
   font-size: 20px;
@@ -71,12 +71,12 @@
 }
 .card-desc {
   font-size: 20px;
-  color: #ffffff;
+  color: var(--text);
 }
 .card a
 {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text);
 }
 @media (max-width: 1024px)  
 {
@@ -116,12 +116,12 @@
   }
   .card:hover .card-title,
   .card:hover .card-desc {
-    color: #ffffff;
+    color: var(--text);
   }
   .card:hover {
     transition: all 0.3s ease-in-out;
     transform: scale(1.05);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-    color: white;
+    color: var(--text);
   }
 }

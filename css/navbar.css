@@ -270,6 +270,10 @@
 }
 @media (max-width:620px)
 {
+  .cursor
+  {
+    display: none;
+  }
   .mobIcons
   {
     right: -5%;

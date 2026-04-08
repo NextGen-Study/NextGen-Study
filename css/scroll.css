@@ -7,22 +7,25 @@
     flex: 0 0 100vw;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #scroll-text p {
-    font-size: clamp(40px, 10vw, 150px);
+    font-size: clamp(30px, 10vw, 150px);
     font-weight: bold;
     text-align: center;
     padding: 0 20px;
     line-height: 1.1;
-    word-break: break-word;
-
     background-image: linear-gradient(to right, var(--primary), var(--secondary));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+#scroll-text img{
+    height: clamp(100px, 10vw, 300px);
+    width: clamp(100px, 10vw, 300px);
 }
 
 @media (max-width: 768px) {

@@ -45,22 +45,29 @@
 {
   height: auto;
   width: 100%;
-  max-width: 600px;
-  object-fit: contain;
+  max-width: 1000px;
+  object-fit: cover;
 }
 .heroButtons {
   position: relative;
   top: -50px;
+  transition: all 0.3s ease-in-out;
 }
 .heroButtons a {
   font-size: 25px;
-  padding: 10px 10px;
+  padding: 15px 15px;
   background-image: linear-gradient(to right, var(--primary) , var(--secondary));
   border-radius: 30px;
   text-decoration: none;
   color: var(--text);
   box-shadow: 1px 1px 3px rgb(0, 0, 0);
   margin: 0px 10px;
+  font-weight: 600;
+  
+}
+.heroButtons:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 #typedText {
   display: inline-block;

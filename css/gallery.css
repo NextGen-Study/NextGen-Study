@@ -62,7 +62,6 @@
   border-bottom: 5px solid var(--accent);
   display: inline-block;
   font-size: 40px;
-  font-weight: bold;
 }
 @media (max-width: 1024px ) {
   

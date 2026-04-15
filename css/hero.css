@@ -8,7 +8,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 5%;
+  padding: 0 5%;
   margin-top: 75px;
 }
 .heroText {
@@ -24,14 +24,14 @@
   background-image: linear-gradient(to right, var(--primary) , var(--secondary));
   background-clip: text;
   color: transparent;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bolder;
   margin-bottom: 30px;
   max-width: 900px;
   line-height: 1.2;
 }
 .heroText h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
